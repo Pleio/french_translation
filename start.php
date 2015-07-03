@@ -3,7 +3,7 @@
 	* French translation.
 	* 
 	* @package french_translation
-	* @author Human Connect
+	* @author Raccourci, Human Connect
 	* @link http://www.elgg.org/
 	*/
 	

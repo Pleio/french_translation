@@ -3,8 +3,8 @@
 	<name>French Translation</name>
 	<description>Provides a French translation for Elgg.</description>
 	<version>1.8.13.1</version>
-	<author>Human Connect</author>
-	<website>http://www.elgg.org/</website>
+	<author>Raccourci, Human Connect</author>
+	<website>http://www.pleio.nl/</website>
 	<license>GNU Public License version 2</license>
 	
 	<requires>
