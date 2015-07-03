@@ -1,0 +1,14 @@
+{
+    "name": "pleio/french_translation",
+    "description": "Provides a French translation for Elgg.",
+    "type": "elgg-plugin",
+    "keywords": ["elgg", "plugin"],
+    "license": "GPL-2.0",
+    "support": {
+        "source": "https://github.com/Pleio/french_translation",
+        "issues": "https://github.com/Pleio/french_translation/issues"
+    },
+    "require": {
+        "composer/installers": "^1.0.8"
+    }
+}
