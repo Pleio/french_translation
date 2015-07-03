@@ -1,102 +1,51 @@
 <?php
-/**
- * Bookmarks English language file
- */
-
-$french = array(
-
-	/**
-	 * Menu items and titles
-	 */
-	'bookmarks' => "Liens favoris",
-	'bookmarks:add' => "Ajouter un lien",
-	'bookmarks:edit' => "Modifier le lien",
-	'bookmarks:owner' => "Les favoris de %s",
-	'bookmarks:friends' => "Favoris des contacts",
-	'bookmarks:everyone' => "Tous les favoris du site",
-	'bookmarks:this' => "Mettre en favoris cette page",
-	'bookmarks:this:group' => "Mettre en favoris dans %s",
-	'bookmarks:bookmarklet' => "Récupérer le bookmarklet",
-	'bookmarks:bookmarklet:group' => "Récupérer le bookmarklet du groupe",
-	'bookmarks:inbox' => "Boîte de réception des favoris",
-	'bookmarks:morebookmarks' => '+ de favoris',
-	'bookmarks:more' => "Plus de liens favoris",
-	'bookmarks:with' => "Partager avec",
-	'bookmarks:new' => "Un nouveau lien",
-	'bookmarks:via' => "via les signets",
-	'bookmarks:address' => "Adresse de la ressource à ajouter à vos favoris",
-	'bookmarks:none' => "Aucuns favoris",
-	'bookmarks:notification' =>
-'%s a partagé un nouveau lien :
+$language = array (
+  'bookmarks' => 'Signets',
+  'bookmarks:add' => 'Ajoutez un signet',
+  'bookmarks:edit' => 'Éditez un signet',
+  'bookmarks:owner' => '%s\'s signets',
+  'bookmarks:friends' => 'Signets d\'amis',
+  'bookmarks:everyone' => 'Signets de l\'ensemble du site',
+  'bookmarks:this' => 'Mettre cette page en signet',
+  'bookmarks:this:group' => 'Mettre en signet dans%s',
+  'bookmarks:bookmarklet' => 'Acquérez le marque pages',
+  'bookmarks:bookmarklet:group' => 'Acquérez un groupe de signets',
+  'bookmarks:inbox' => 'Boîte de réception des signets',
+  'bookmarks:morebookmarks' => 'Davantage de signets',
+  'bookmarks:more' => 'Davantage de signets',
+  'bookmarks:with' => 'Partager avec',
+  'bookmarks:new' => 'Un nouveau signet',
+  'bookmarks:address' => 'Adresse du signet',
+  'bookmarks:none' => 'Pas de signets',
+  'bookmarks:notification' => '%s a ajouté un nouveau signet:
 
 %s - %s
 %s
 
-Voir et commenter ce lien:
-%s
-',
-	'bookmarks:delete:confirm' => "Etes-vous sûr(e) de vouloir supprimer cette ressource ?",
-
-	'bookmarks:numbertodisplay' => "Nombre de favoris à afficher",
-
-	'bookmarks:shared' => "a partagé un lien",
-	'bookmarks:visit' => "Voir la ressource",
-	'bookmarks:recent' => "Favoris récents",
-
-	'bookmarks:river:created' => "%s mis en favoris",
-	'bookmarks:river:annotate' => "a posté un commentaire sur ce favori",
-	'bookmarks:river:item' => "un favori",
-	'river:commented:object:bookmarks' => "un favori",
-	'river:create:object:bookmarks' => '%s a partagé le lien %s',
-	'river:comment:object:bookmarks' => '%s a commenté le lien %s',
-	'bookmarks:river:annotate' => 'a commenté ce lien',
-	'bookmarks:river:item' => 'un lien',
-	'item:object:bookmarks' => "Eléments mis en favoris",
-
-	'bookmarks:group' => "Liens favoris",
-	'bookmarks:enablebookmarks' => "Activer les liens favoris du groupe",
-	'bookmarks:nogroup' => "Ce groupe n'a pas encore de favoris",
-	'bookmarks:more' => "Plus de favoris",
-
-	'bookmarks:no_title' => "Pas de titre",
-	
-	/* Key bookmarks */
-	"bookmarks:settings:key" => "Activer les favoris clés du site", 
-	"bookmarks:filter:key" => "Les liens favoris importants", 
-	"bookmarks:filter:friend" => "Les liens favoris de mes contacts",
-	"bookmarks:filter:mine" => "Mes liens favoris",
-	"bookmarks:filter:all" => "Tous les liens favoris",
-	"bookmarks:forms:isakey" => "Ce lien est un lien favori important",
-	
-	/**
-	 * Widget and bookmarklet
-	 */
-	'bookmarks:widget:description' => "Ce widget affiche vos derniers favoris.",
-
-	'bookmarks:bookmarklet:description' =>
-			"Le bookmarklet vous permez de partager ce que vous trouvez sur le web avec vos contact, ou pour vous-même. Pour l'utiliser, glissez simplement le boutton ci-dessous dans votre barre de liens de votre navigateur.",
-
-	'bookmarks:bookmarklet:descriptionie' =>
-			"Si vous utilisez Internet Explorer, faites un clic droit sur le boutton et ajouter le dans vos favoris, puis votre barre de liens.",
-
-	'bookmarks:bookmarklet:description:conclusion' =>
-			"Vous pouvez mettre en favoris n'importe quelle page en cliquant sur le bookmarklet.",
-
-	/**
-	 * Status messages
-	 */
-
-	'bookmarks:save:success' => "Votre élément a bien été mis en favoris.",
-	'bookmarks:delete:success' => "Votre favori a bien été supprimé.",
-
-	/**
-	 * Error messages
-	 */
-
-	'bookmarks:save:failed' => "Votre élément n'a pu être correctement mis en favori. Vérifiez que le titre et le lien soient correct et réessayez.",
-	'bookmarks:delete:failed' => "Votre favori n'a pu être supprimé. Merci de réessayer.",
-	'bookmarks:save:invalid' => "L'adresse de votre lien est invalide et ne peut être sauvegardée.",
-
+Consultez et faites des observations sur le nouveau signet:
+%s',
+  'bookmarks:delete:confirm' => 'Etes-vous certain de vouloir retirer cette ressource?',
+  'bookmarks:numbertodisplay' => 'Nombre de signets à afficher',
+  'bookmarks:shared' => 'mis en signet',
+  'bookmarks:visit' => 'Consultez le centre de ressource',
+  'bookmarks:recent' => 'Signets récents',
+  'river:create:object:bookmarks' => '%s mis en page %s',
+  'river:comment:object:bookmarks' => '%s commenté sur un signet %s',
+  'bookmarks:river:annotate' => 'Un commentaire sur ce signet',
+  'bookmarks:river:item' => 'un élément',
+  'item:object:bookmarks' => 'Signets',
+  'bookmarks:group' => 'Groupe signets',
+  'bookmarks:enablebookmarks' => 'Permettre un groupe de signets',
+  'bookmarks:nogroup' => 'Ce groupe n\'a toujours pas de signets',
+  'bookmarks:no_title' => 'Aucun titre',
+  'bookmarks:widget:description' => 'Affichez vos derniers signets',
+  'bookmarks:bookmarklet:description' => 'le marque pages des signets vous autorise à partager toute ressource que vous trouverez sur le web  avec vos amis ou mettez -les juste en page pour vous-même.  Pour l\'utilisez faites simplement glisser le bouton suivant vers votre barre de liens de navigateur:',
+  'bookmarks:bookmarklet:descriptionie' => 'Si vous utilisez Internet Explorer, vous aurez besoin de cliquer avec le bouton droit sur l\'icône du marque-page, sélectionner "ajouter aux favoris" et puis la barre  des liens.',
+  'bookmarks:bookmarklet:description:conclusion' => 'Vous pouvez alors sauvegarder toute page que vous visitez en cliquant dessus à tout moment.',
+  'bookmarks:save:success' => 'Votre élément  a été mis en page avec succès.',
+  'bookmarks:delete:success' => 'Votre signet a été supprimé.',
+  'bookmarks:save:failed' => 'Votre signet n\'a pas pu être sauvegardé. Soyez certain d\'avoir entré un titre et une adresse et essayez à nouveau.',
+  'bookmarks:save:invalid' => 'L\'adresse du signet est invalide et n\'a pas pu être sauvegardé.',
+  'bookmarks:delete:failed' => 'Votre signet ne pouvait pas être supprimé. Veuillez essayer à nouveau.',
 );
-
-add_translation("fr", $french);
+add_translation("fr", $language);

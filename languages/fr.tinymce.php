@@ -1,15 +1,8 @@
 <?php
-/**
- * TinyMCE language pack.
- *
- * @package ElggTinyMCE
- */
-
-$french = array(
-	'tinymce:remove' => "Enlever l'éditeur",
-	'tinymce:add' => "Ajouter l'éditeur",
-	'tinymce:word_count' => 'Nombre de mot: ',
-	'tinymce:lang_notice' => "La langue du site est %s Mais elle n'est pas installée pour TinyMCE. Téléchargez la <a target=\"_blank\" href=\"%s\">ici</a> et copiez la %s. Puis, <a href=\"%s\">videz le cache</a>. Lisez la documentaion TinyMce pour plus de détails.",
+$language = array (
+  'tinymce:remove' => 'Supprimez éditeur',
+  'tinymce:add' => 'Ajoutez éditeur',
+  'tinymce:word_count' => 'Compte de mots:',
+  'tinymce:lang_notice' => 'Votre langage du site est %s mais il n\'est pas installé pour TinyMCE.  Obtenez le  <a target="_blank" href="%s">ici</a> et copiez le sur %s. Puis, <a href="%s">flush the caches</a>. Voir le TinyMCE README pour plus de détails.',
 );
-
-add_translation("fr", $french);
+add_translation("fr", $language);

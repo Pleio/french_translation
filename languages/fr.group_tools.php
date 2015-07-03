@@ -1,325 +1,336 @@
-<?php 
+<?php
+$language = array (
+  'groups:search:tags' => 'Balise',
+  'groups:search:title' => 'Cherchez correspondance des groupes avec \'%s\'',
+  'groups:searchtag' => 'Cherchez pour les groupes par balise',
+  'group_tools:decline' => 'Refuser',
+  'group_tools:revoke' => 'Révoquer',
+  'group_tools:add_users' => 'Ajouter des utilisateurs',
+  'group_tools:in' => 'dans',
+  'group_tools:remove' => 'Supprimer',
+  'group_tools:delete_selected' => 'Supprimer sélectionné',
+  'group_tools:clear_selection' => 'Effacer sélection',
+  'group_tools:all_members' => 'Tous les membres',
+  'group_tools:explain' => 'Explication',
+  'group_tools:default:access:group' => 'Membres de groupes uniquement',
+  'group_tools:joinrequest:already' => 'Révoquer demande d\'adhésion',
+  'group_tools:joinrequest:already:tooltip' => 'Vous avez déjà demandé à adhérer à ce groupe, cliquez ici pour révoquer cette demande',
+  'group_tools:join:already:tooltip' => 'Vous avez été invité à ce groupe de sorte à pouvoir le joindre dès maintenant.',
+  'group_tools:menu:mail' => 'Envoyez un mail aux membres',
+  'group_tools:menu:invitations' => 'Gérez les invitations',
+  'admin:administer_utilities:group_bulk_delete' => 'Effacez groupe',
+  'group_tools:settings:invite:title' => 'Options d\'invitation de groupe',
+  'group_tools:settings:management:title' => 'Options groupe général',
+  'group_tools:settings:default_access:title' => 'Accès groupe par défaut',
+  'group_tools:settings:admin_transfer' => 'Autoriser transfert du propriétaire du groupe',
+  'group_tools:settings:admin_transfer:admin' => 'Administrateur du site uniquement',
+  'group_tools:settings:admin_transfer:owner' => 'Groupe de propriétaires et administrateurs du site',
+  'group_tools:settings:multiple_admin' => 'Autoriser administrateurs groupes multiples',
+  'group_tools:settings:auto_suggest_groups' => 'Suggestion automatique de groupes sur la page des groupes "suggérés" basé sur des informations de profil. Sera complété avec les groupes suggérés prédéfinis. Configuration de ceci en "non" montrera uniquement les groupes suggérés prédéfinis (s\'il y en a).',
+  'group_tools:settings:invite' => 'Autorise tous les utilisateurs à être invités (pas uniquement les amis)',
+  'group_tools:settings:invite_email' => 'Autorise tous les utilisateurs à être invités par adresse e-mail',
+  'group_tools:settings:invite_csv' => 'Autorise tous les utilisateurs à être invités par fichier CSV',
+  'group_tools:settings:invite_members' => 'Autorise les membres du groupe à inviter de nouveaux utilisateurs',
+  'group_tools:settings:invite_members:default_off' => 'Oui, par défaut',
+  'group_tools:settings:invite_members:default_on' => 'Oui, par défaut',
+  'group_tools:settings:invite_members:description' => 'Le groupe de propriétaires/administrateurs peut autoriser/ désactiver ceci pour leur groupe',
+  'group_tools:settings:domain_based' => 'Autorise les groupes basés sur un domaine',
+  'group_tools:settings:domain_based:description' => 'Les utilisateurs peuvent adhérer à un groupe basé sur leur domaine de messagerie. Durant l\'inscription ils adhèrent automatiquement aux groupes basés sur leur domaine  de messagerie.',
+  'group_tools:settings:mail' => 'Autorisez le groupe de messagerie (autorise les administrateurs de groupe à envoyer un message à tous les membres)',
+  'group_tools:settings:listing:default' => 'Groupe par défaut répertoire onglets',
+  'group_tools:settings:listing:available' => 'Groupe disponible répertoire onglets',
+  'group_tools:settings:default_access' => 'Que devrait être l\'accès par défaut pour un contenu dans les groupes de ce site',
+  'group_tools:settings:default_access:disclaimer' => '<b>DISCLAIMER:</b> Ceci ne fonctionnera pas à moins d\'avoir <a href="https://github.com/Elgg/Elgg/pull/253" target="_blank">https://github.com/Elgg/Elgg/pull/253</a> appliqué à votre installation Elgg.',
+  'group_tools:settings:search_index' => 'Autorise les groupes fermés à être indexés par les moteurs de recherche',
+  'group_tools:settings:auto_notification' => 'Autorise automatiquement la notification de groupe sur l\'adhésion au groupe',
+  'group_tools:settings:show_membership_mode' => 'Montrez le statut d\'adhésion ouvert/fermé sur le profil de groupe et bloc du propriétaire',
+  'group_tools:settings:show_hidden_group_indicator' => 'Montrez un indicateur si un groupe est caché',
+  'group_tools:settings:show_hidden_group_indicator:group_acl' => 'Oui, si un groupe est un membre uniquement',
+  'group_tools:settings:show_hidden_group_indicator:logged_in' => 'Oui, pour tous les groupes non publics',
+  'group_tools:settings:special_states' => 'Groupes avec un état spécial',
+  'group_tools:settings:special_states:featured' => 'Configuré',
+  'group_tools:settings:special_states:featured:description' => 'Les administrateurs du site ont choisi de configurer les groupes suivants.',
+  'group_tools:settings:special_states:auto_join' => 'Autoadhérer',
+  'group_tools:settings:special_states:auto_join:description' => 'Les nouveaux utilisateurs adhèrent automatiquement aux groupes suivants',
+  'group_tools:settings:special_states:suggested' => 'Suggéré',
+  'group_tools:settings:special_states:suggested:description' => 'Les groupes suivants sont suggérés aux (nouveaux) utilisateurs. Il est possible d\'auto suggérer  des groupes, si aucun groupe n\'est automatiquement détecté ou trop peu, la liste sera annexée par ces groupes.',
+  'group_tools:settings:fix:title' => 'Fixer les problèmes d\'accès de groupe.',
+  'group_tools:settings:fix:missing' => 'Il y a des %d utilisateurs qui sont membres d\'un groupe mais qui n\'ont pas accès au contenu partagé par le groupe.',
+  'group_tools:settings:fix:excess' => 'Il y a  % des utilisateurs qui ont accès au contenu de groupe de groupes dont ils ne sont plus membres.',
+  'group_tools:settings:fix:without' => 'Il existe des  % des groupes qui n\'ont pas possibilité de partager le contenu avec leurs membres.',
+  'group_tools:settings:fix:all:description' => 'Fixer tous les problèmes ci-dessus en une seule fois',
+  'group_tools:settings:fix_it' => 'Fixer ceci',
+  'group_tools:settings:fix:all' => 'Fixez tous les problèmes',
+  'group_tools:settings:fix:nothing' => 'Il n\'y a rien d\'anormal avec les groupes sur votre site!',
+  'group_tools:settings:member_export' => 'Autoriser les administrateurs d\'un groupe à exporter des informations sur les membres',
+  'group_tools:settings:member_export:description' => 'Ceci comprend le nom, le nom d’utilisateur et adresse email de l\'utilisateur',
+  'group_tools:groups:invite:body' => 'Bonjour %s,
 
-	$francais = array(
-	
-		// general
-		'group_tools:decline' => "Décliner",
-		'group_tools:revoke' => "Retirer",
-		'group_tools:add_users' => "Ajouter des utilisateurs",
-		'group_tools:in' => "dans",
-		'group_tools:remove' => "Supprimer",
-		'group_tools:clear_selection' => "Effacer la sélection",
-		'group_tools:all_members' => "Tous les membres",
-		'group_tools:explain' => "Explication",
-		
-		'group_tools:default:access:group' => "Uniquement les membres du groupe",
-		
-		'group_tools:joinrequest:already' => "Supprimer la demande d'adhésion",
-		'group_tools:joinrequest:already:tooltip' => "Vous avez déjà demandé à rejoindre ce groupe, cliquez ici si vous souhaitez supprimer votre demande d'adhésiont",
-		
-		// menu
-		'group_tools:menu:mail' => "Envoyer un message aux membres",
-		'group_tools:menu:invitations' => "Gérer les invitations",
-		
-		// plugin settings
-		'group_tools:settings:invite:title' => "Options des invitations de groupe",
-		'group_tools:settings:management:title' => "Options générales",
-		'group_tools:settings:default_access:title' => "Accès par défaut des publications dans le groupe",
-	
-		'group_tools:settings:admin_create' => "Limiter la création de groupes aux administrateurs",
-		'group_tools:settings:admin_create:description' => "Si vous indiquez 'Oui' aucun membre ne pourra créer de groupe par lui-même.",
-		
-		'group_tools:settings:admin_transfer' => "Autoriser le transfert d'administrateur du groupe",
-		'group_tools:settings:admin_transfer:admin' => "Seulement par les administrateurs du site",
-		'group_tools:settings:admin_transfer:owner' => "Par les administrateurs du site et par les animateurs de groupes",
-		
-		'group_tools:settings:multiple_admin' => "Autoriser plusieurs animateurs de groupes",
-		
-		'group_tools:settings:invite' => "Autoriser l'invitation de n'importe quel membre de la communauté (pas seulement les contacts)",
-		'group_tools:settings:invite_email' => "autoriser l'invitation de membres par leur adresse mail",
-		'group_tools:settings:invite_csv' => "autoriser l'invitation de membres en intégrant un fichier CSV",
-	
-		'group_tools:settings:mail' => "Autoriser les animateurs de groupes à envoyer des emails à tous leurs membres",
-		
-		'group_tools:settings:listing' => "Affichage des groupes par défaut",
-		
-		'group_tools:settings:default_access' => "Quel sera le niveau de publication par défaut dans les groupes ? (nous conseillons fortement de restreindre par défaut les publications au groupe lui-même)",
-		'group_tools:settings:default_access:disclaimer' => "<b>ATTENTION:</b> Cette option implique que vous devez modifier le fichier /lib/access.php avec celui-ci <a href='https://github.com/Elgg/Elgg/pull/253' target='_blank'>https://github.com/Elgg/Elgg/pull/253</a> ",
-		
-		'group_tools:settings:search_index' => "Autoriser les groupes fermés à être indexés par les moteurs de recherche (pour les communautés ouvertes)",
-		'group_tools:settings:auto_notification' => "Lorsqu'un membre rejoint un groupe, il sera automatiquement notifié de son activité",
-		'group_tools:settings:auto_join' => "Adhésion automatiques aux groupes",
-		'group_tools:settings:auto_join:description' => "Les nouveaux membres rejoindrons automatiquement les groupes suivants :",
-		
-		// group invite message
-		'group_tools:groups:invite:body' => "Bonjour %s,
-
-%s vous a invité à rejoindre le groupe '%s'. 
+%s vous a invité à adhérer %s\' au groupe.
 %s
 
-Cliquez qur le lien ci-dessous pour voir vos invitations aux groupes :
-%s",
-	
-		// group add message
-		'group_tools:groups:invite:add:subject' => "Vous êtes membre du groupe %s",
-		'group_tools:groups:invite:add:body' => "Bonjour %s,
-	
-%s vous a ajouté comme membre du groupe %s.
+Cliquez ci-dessous pour afficher vos invitations:
+%s',
+  'group_tools:groups:invite:add:subject' => 'Vous avez été ajouté au groupe%s',
+  'group_tools:groups:invite:add:body' => 'Bonjour %s,
+%s  vous a ajouté au groupe %s.
 %s
 
-Pour voir ce groupe, cliquez-ici
-%s",
-		// group invite by email
-		'group_tools:groups:invite:email:subject' => "Vous avez été invité à rejoindre le groupe %s",
-		'group_tools:groups:invite:email:body' => "Bonjour,
+Pour afficher le groupe cliquez sur ce lien
+%s',
+  'group_tools:groups:invite:email:subject' => 'Vous avez été invité pour le groupe%s',
+  'group_tools:groups:invite:email:body' => 'Bonjour,
 
-%s vous a invité à rejoindre le groupe %s sur %s.
+%s vous a invité à joindre le groupe %s sur %s.
 %s
 
-Si vous n'avez pas encore de compte sur %s, vous pouvez vous inscrire ici :
+Si vous n\'avez pas de compte sur %s veuillez vous inscrire ici
 %s
 
-Si vous êtes déjà membre, ou après votre nouvelle inscription, cliquez sur ce lien pour rejoindre le groupe.
+Si vous avez déjà un compte ou après vous être enregistré, veuillez cliquer sur le lien suivant pour accepter l\'invitation
 %s
 
-Vous pouvez aussi allez sur Tous les groupes -> Invitations et entrer le code suivant:
-%s",
-		// group transfer notification
-		'group_tools:notify:transfer:subject' => "L'administration du groupe %s vous a été assignée",
-		'group_tools:notify:transfer:message' => "Bonjour %s,
-		
-%s vous a transmis l'administration du groupe %s. 
+Vous pouvez également aller sur tous les groupes du site -> Invitations de groupe et entrer le code suivant :
+%s',
+  'group_tools:notify:transfer:subject' => 'L\'administration du groupe %s vous a été attribuée',
+  'group_tools:notify:transfer:message' => 'Bonjour %s,
 
-Pour visiter ce groupe, vous pouvez cliquer ce lien:
-%s",
-		
-		// group edit tabbed
-		'group_tools:group:edit:profile' => "Profil de groupe / outils",
-		'group_tools:group:edit:other' => "Autres options",
+%s vous a désigné en tant que nouvel administrateur du groupe %s.
 
-		// admin transfer - form
-		'group_tools:admin_transfer:title' => "Transférer l'appartenance de ce groupe",
-		'group_tools:admin_transfer:transfer' => "Transférer l'appartenance à ",
-		'group_tools:admin_transfer:myself' => "Moi-même",
-		'group_tools:admin_transfer:submit' => "Transférer",
-		'group_tools:admin_transfer:no_users' => "Aucun membre ou contact a qui transférer l'appartenance de ce groupe.",
-		'group_tools:admin_transfer:confirm' => "Etes-vous certain/e de vouloir transférer l'appartenance de ce groupe?",
-		
-		// auto join form
-		'group_tools:auto_join:title' => "Options d'auto-adhésion",
-		'group_tools:auto_join:add' => "%sAjouter ce groupe%s dans les groupes à rejoindre à l'inscription.",
-		'group_tools:auto_join:remove' => "%sSupprimer ce groupe%s des groupes à rejoindre à l'inscription.",
-		'group_tools:auto_join:fix' => "Pour inscrire tous les membres du site dans ce groupe,  %scliquez ici%s.",
-		
-		// group admins
-		'group_tools:multiple_admin:group_admins' => "Admins du groupe",
-		'group_tools:multiple_admin:profile_actions:remove' => "Supprimer cet admin",
-		'group_tools:multiple_admin:profile_actions:add' => "Ajouter cet admin",
-	
-		'group_tools:multiple_admin:group_tool_option' => "Autoriser les administrateurs du groupe a créer d'autres admistrateurs de groupe",
+Pour rendre visite au groupe, veuillez cliquer sur le lien suivant:
+%s',
+  'group_tools:group:edit:profile' => 'Profil du groupe/outils',
+  'group_tools:group:edit:other' => 'Autres options',
+  'group_tools:admin_transfer:title' => 'Transférer la propriété de ce groupe',
+  'group_tools:admin_transfer:transfer' => 'Transférer la propriété de groupe en',
+  'group_tools:admin_transfer:myself' => 'Moi-meme',
+  'group_tools:admin_transfer:submit' => 'Transférer',
+  'group_tools:admin_transfer:no_users' => 'Aucun membre ou amis à qui transférer la propriété',
+  'group_tools:admin_transfer:confirm' => 'Etes-vous sur de vouloir transférer la propriété?',
+  'group_tools:special_states:title' => 'Groupe spécial affirme',
+  'group_tools:special_states:description' => 'Un groupe peut avoir plusieurs états spéciaux, voici un sommaire des états spéciaux et leur valeur actuelle.',
+  'group_tools:special_states:featured' => 'Ce groupe est-il présenté?',
+  'group_tools:special_states:auto_join' => 'Est-ce que les utilisateurs vont adhérer automatiquement à ce groupe?',
+  'group_tools:special_states:auto_join:fix' => 'Pour faire de tous les membres de ce site un membre de ce groupe, veuillez %cliquer ici%s.',
+  'group_tools:special_states:suggested' => 'Est-ce que ce groupe a été suggéré à de (nouveaux) utilisateurs?',
+  'group_tools:multiple_admin:group_admins' => 'Administrateurs de groupe',
+  'group_tools:multiple_admin:profile_actions:remove' => 'Retirer l\'administrateur du groupe',
+  'group_tools:multiple_admin:profile_actions:add' => 'Ajouter administrateur du groupe',
+  'group_tools:multiple_admin:group_tool_option' => 'Autorise les administrateurs du groupe à assigner d\'autres administrateurs de groupe',
+  'group_tools:cleanup:title' => 'Nettoyage barre latérale du groupe',
+  'group_tools:cleanup:description' => 'Nettoyage barre latérale du groupe. Ceci n\'aura aucun effet sur les administrateurs du groupe',
+  'group_tools:cleanup:owner_block' => 'Restreindre le blocage du propriétaire',
+  'group_tools:cleanup:owner_block:explain' => 'Le blocage du propriétaire peut être trouvé au sommet de la barre latérale, certains liens supplémentaires peuvent être affichés dans cette zone (exemple: Liens RSS)',
+  'group_tools:cleanup:actions' => 'Cacher le bouton joindre le groupe/demande d\'adhésion',
+  'group_tools:cleanup:actions:explain' => 'En fonction des paramètres de votre groupe, les utilisateurs peuvent directement adhérer au groupe ou demander une adhésion.',
+  'group_tools:cleanup:menu' => 'Cachez les menus latéraux.',
+  'group_tools:cleanup:menu:explain' => 'Cachez le menu à gauche aux différents outils de groupe. Les utilisateurs seront uniquement capables d\'avoir accès aux outils du groupe en utilisant des widgets de groupe',
+  'group_tools:cleanup:members' => 'Cachez les membres du groupe',
+  'group_tools:cleanup:members:explain' => 'Sur la page des profils du groupe une liste des membres du groupe peut être trouvée dans la section soulignée. Vous pouvez choisir de cacher cette liste.',
+  'group_tools:cleanup:search' => 'Cachez la recherche en groupe.',
+  'group_tools:cleanup:search:explain' => 'Sur la page des profils du groupe un champ  de recherche est disponible.  Vous pouvez choisir de cacher ceci.',
+  'group_tools:cleanup:featured' => 'Montrez les groupes configurés dans la barre latérale',
+  'group_tools:cleanup:featured:explain' => 'Vous pouvez choisir de montrer une liste des groupes configurés dans la section soulignée sur la  page des profils du groupe',
+  'group_tools:cleanup:featured_sorting' => 'Comment trier les groupes configurés.',
+  'group_tools:cleanup:featured_sorting:time_created' => 'Le plus nouveau en  premier',
+  'group_tools:cleanup:featured_sorting:alphabetical' => 'Alphabétique',
+  'group_tools:cleanup:my_status' => 'Cachez la barre barre latérale de mon statut',
+  'group_tools:cleanup:my_status:explain' => 'Dans la barre latérale sur la page profil du groupe, il existe un élément qu montre votre statut actuel d\'adhésion et parfois d\'autres informations sur le statut. Vous pouvez  choisir de cacher ceci.',
+  'group_tools:default_access:title' => 'Accès au groupe par défaut.',
+  'group_tools:default_access:description' => 'Vous pouvez contrôler ici ce que l\'accès par défaut du nouveau contenu dans votre groupe devrait être.',
+  'group_tools:notifications:title' => 'Notifications de groupe.',
+  'group_tools:notifications:description' => 'Ce groupe a %s membres, de ceux  %s qui ont activé les notifications sur l\'activité dans ce groupe. En -dessous vous pouvez modifier ceci pour tous les utilisateurs du groupe.',
+  'group_tools:notifications:disclaimer' => 'Ceci pourrait prendre un peu de temps avec des groupes larges.',
+  'group_tools:notifications:enable' => 'A activé les notifications pour tout le monde',
+  'group_tools:notifications:disable' => 'A désactivé les notifications pour tout le monde',
+  'group_tools:profile_widgets:title' => 'Montrez les widgets du profile du groupe aux non membres',
+  'group_tools:profile_widgets:description' => 'Ceci est un groupe clos.  Les widgets par défaut sont montrés aux non membres. Vous pouvez configurer  ici si vous voulez changer cela.',
+  'group_tools:profile_widgets:option' => 'Autoriser les non membres à afficher les widgets sur  la page des profils du groupe:',
+  'group_tools:mail:message:from' => 'Du groupe',
+  'group_tools:mail:title' => 'Envoyez un mail aux membres du groupe',
+  'group_tools:mail:form:recipients' => 'Nombre de récipients',
+  'group_tools:mail:form:members:selection' => 'Sélectionnez les membres individuels',
+  'group_tools:mail:form:title' => 'Sujet',
+  'group_tools:mail:form:description' => 'Corps',
+  'group_tools:mail:form:js:members' => 'Veuillez sélectionner au moins un membre à qui envoyer un message',
+  'group_tools:mail:form:js:description' => 'Veuillez entrer un message',
+  'group_tools:groups:invite:title' => 'Invitez les utilisateurs à ce groupe',
+  'group_tools:groups:invite' => 'Invitez les utilisateurs',
+  'group_tools:group:invite:friends:select_all' => 'Sélectionnez tous les amis',
+  'group_tools:group:invite:friends:deselect_all' => 'Désélectionnez tous les amis',
+  'group_tools:group:invite:users' => 'Trouvez les utilisateur(s)',
+  'group_tools:group:invite:users:description' => 'Entrez un nom ou nom d\'utilisateur d\'un membre du site et sélectionnez-le/la à partir de la liste.',
+  'group_tools:group:invite:users:all' => 'Invitez tous les membres du site à ce groupe',
+  'group_tools:group:invite:email' => 'Utilisation d\'une adresse e-mail',
+  'group_tools:group:invite:email:description' => 'Entrez une adresse e-mail valide et sélectionnez-la à partir de la liste.',
+  'group_tools:group:invite:csv' => 'Utilisation chargement CSV',
+  'group_tools:group:invite:csv:description' => 'Vous pouvez télécharger un fichier CSV avec des utilisateurs à inviter.<br> Le format doit être: afficher nom; adresse e-mail. Il ne devrait pas y avoir une ligne d\'en-tête',
+  'group_tools:group:invite:text' => 'Note personnelle (optionnelle)',
+  'group_tools:group:invite:add:confirm' => 'Etes-vous certain de souhaiter ajouter ces utilisateurs directement?',
+  'group_tools:group:invite:resend' => 'Renvoyer des invitations aux utilisateurs qui ont déjà été invités.',
+  'group_tools:groups:invitation:code:title' => 'Invitation de groupe par e-mail',
+  'group_tools:groups:invitation:code:description' => 'Si vous avez reçu une invitation pour adhérer à un groupe par e-mail, vous pouvez entrer le code d\'invitation ici pour accepter l\'invitation. Si vous cliquez sur le lien dans l\'email d\'invitation , le code sera entré pour vous.',
+  'group_tools:groups:membershipreq:requests' => 'Requêtes adhésion.',
+  'group_tools:groups:membershipreq:invitations' => 'Utilisateurs invités',
+  'group_tools:groups:membershipreq:invitations:none' => 'Aucune invitation d\'utilisateurs en attente',
+  'group_tools:groups:membershipreq:email_invitations' => 'Adresses e-mails invitées',
+  'group_tools:groups:membershipreq:email_invitations:none' => 'Aucune invitation email en cours',
+  'group_tools:groups:membershipreq:invitations:revoke:confirm' => 'Etes-vous certain de souhaiter révoquer cette invitation?',
+  'group_tools:group:invitations:request' => 'Requêtes d\'adhésions en cours',
+  'group_tools:group:invitations:request:revoke:confirm' => 'Etes-vous certain de vouloir révoquer votre demande d\'adhésion?',
+  'group_tools:group:invitations:request:non_found' => 'Il n\'y a pas de demande d\'adhésion en cours à l\'heure actuelle',
+  'group_tools:groups:sorting:alphabetical' => 'Alphabétique',
+  'group_tools:groups:sorting:open' => 'Ouvert',
+  'group_tools:groups:sorting:closed' => 'Fermé',
+  'group_tools:groups:sorting:ordered' => 'Ordonné',
+  'group_tools:groups:sorting:suggested' => 'Suggéré',
+  'group_tools:discussion:confirm:open' => 'Êtes-vous certain de vouloir rouvrir ce sujet?',
+  'group_tools:discussion:confirm:close' => 'Êtes vous certain de souhaiter clore ce sujet?',
+  'group_tools:invite_members:title' => 'Les membres de groupes peuvent être invités',
+  'group_tools:invite_members:description' => 'Autorisez les membres de ce groupe à inviter de nouveaux membres',
+  'group_tools:action:error:input' => 'Entrée invalide pour effectuer cette action',
+  'group_tools:action:error:entities' => 'Les GUID\'s donnés n\'ont pas résulté dans des entités corrrectes',
+  'group_tools:action:error:entity' => 'Les GUID\'s donnés n\'ont pas résulté dans une entité corrrecte',
+  'group_tools:action:error:edit' => 'Vous n\'avez pas accès à l\'entité donnée',
+  'group_tools:action:error:save' => 'Il y a eu une erreur lors de la sauvegarde des paramètres',
+  'group_tools:action:success' => 'Les paramètres ont été sauvegardés avec succès.',
+  'group_tools:action:admin_transfer:error:access' => 'Vous n’êtes pas autorisé à transférer l\'adhésion de ce groupe.',
+  'group_tools:action:admin_transfer:error:self' => 'Vous ne pouvez pas transférer l\'adhésion à vous-même. Vous êtes déjà le propriétaire.',
+  'group_tools:action:admin_transfer:error:save' => 'Un erreur inconnue est apparue lors de la sauvegarde du groupe, veuillez essayer à nouveau.',
+  'group_tools:action:admin_transfer:success' => 'L\'adhésion de groupe a été transférée avec succès à  %s',
+  'group_tools:action:toggle_admin:error:group' => 'L\'entrée donnée ne résulte pas dans un groupe ou vous ne pouvez pas modifier ce groupe ou l\'utilisateur n\'est pas un membre.',
+  'group_tools:action:toggle_admin:error:remove' => 'Une erreur inconnue est apparue lors du retrait de l\'utilisateur en tant qu\'administrateur du groupe.',
+  'group_tools:action:toggle_admin:error:add' => 'Une erreur inconnue est apparue lors de l\'ajout de l\'utilisateur en tant qu\'administrateur du groupe',
+  'group_tools:action:toggle_admin:success:remove' => 'L\'utilisateur a été supprimé avec succès en tant qu\'administrateur du groupe',
+  'group_tools:action:toggle_admin:success:add' => 'L\'utilisateur a été ajouté avec succès en tant qu\'administrateur du groupe',
+  'group_tools:action:mail:success' => 'Message envoyé avec succès',
+  'group_tools:action:invite:error:invite' => 'Aucun utilisateur n\'a été invité (%s déjà invité, %s déjà un membre)',
+  'group_tools:action:invite:error:add' => 'aucun utilisateur n\'a été invité ( (%s déjà invité, %s déjà un membre)',
+  'group_tools:action:invite:success:invite' => 'Utilisateurs invités avec succès %s(%s déjà invités et  %s  déjà membres)',
+  'group_tools:action:invite:success:add' => 'Utilisateurs %s ajoutés avec succès ((%s déjà invités et %s déjà membres)',
+  'group_tools:action:groups:email_invitation:error:input' => 'Veuillez entre un code d\'invitation',
+  'group_tools:action:groups:email_invitation:error:code' => 'Le code d\'invitation entré n\'est plus valide',
+  'group_tools:action:groups:email_invitation:error:join' => 'Une erreur inconnue est apparue lors de l\'adhésion au groupe %s, peut-être que vous êtes déjà un membre',
+  'group_tools:action:groups:email_invitation:success' => 'Vous avez joint avec succès le groupe',
+  'group_tools:action:groups:decline_email_invitation:error:delete' => 'Une erreur est apparue lors du retrait de l\'invitation',
+  'group_tools:suggested_groups:info' => 'Les groupes suivants peuvent être intéressants pour vous. Cliquez sur les boutons d\'adhésion pour les joindre immédiatement ou cliquez sur le titre pour consulter plus d\'information sur le groupe.',
+  'group_tools:suggested_groups:none' => 'Nous pouvons vous suggérer un groupe. Ceci peut arriver si nous avons trop peu d\'informations à votre propos, ou que vous êtes déjà un membre du groupe que vous voudriez joindre. Utilisez la fonction de recherche pour trouver plus de groupes.',
+  'group_tools:action:toggle_special_state:error:auto_join' => 'Une erreur est apparue lors de la sauvegarde des nouveaux paramètres d\'auto adhésion',
+  'group_tools:action:toggle_special_state:error:suggested' => 'Une erreur est apparue lors de la sauvegarde des nouveaux paramètres suggérés',
+  'group_tools:action:toggle_special_state:error:state' => 'Etat invalide fourni',
+  'group_tools:action:toggle_special_state:auto_join' => 'Les nouveaux paramètres d\'auto adhésion ont été sauvegardés avec succès',
+  'group_tools:action:toggle_special_state:suggested' => 'Les nouveaux paramètres suggérés ont été sauvegardés avec succès',
+  'group_tools:action:fix_auto_join:success' => 'Adhésion de groupe fixée: %s nouveaux membres, %s étaient déjà un membre et  %s défaillances',
+  'group_tools:actions:cleanup:success' => 'Les paramètres de nettoyage ont été sauvegardés avec succès',
+  'group_tools:actions:default_access:success' => 'L\'accès par défaut pour le groupe a été sauvegardé avec succès',
+  'group_tools:action:notifications:error:toggle' => 'Option de bascule invalide',
+  'group_tools:action:notifications:success:disable' => 'Notifications désactivées pour chaque membre',
+  'group_tools:action:notifications:success:enable' => 'Notifications activées avec succès pour chaque membre',
+  'group_tools:action:fix_acl:error:input' => 'Option invalide que vous ne pouvez pas fixer: %s',
+  'group_tools:action:fix_acl:error:missing:nothing' => 'Pas d\'utilisateurs manquants trouvés dans le groupe ACLs',
+  'group_tools:action:fix_acl:error:excess:nothing' => 'Pas d\'utilisateurs en excès trouvés dans les groupes ACLs',
+  'group_tools:action:fix_acl:error:without:nothing' => 'Pas de groupes trouvés avec un ACL',
+  'group_tools:action:fix_acl:success:missing' => 'Utilisateurs ajoutés avec succès %d au groupe ACL',
+  'group_tools:action:fix_acl:success:excess' => 'Utilisateurs retirés avec succès % du groupe ACL',
+  'group_tools:action:fix_acl:success:without' => 'Groupe retiré avec succès %d ACLS',
+  'group_tools:action:discussion:toggle_status:success:open' => 'Le sujet a été retiré avec succès',
+  'group_tools:action:discussion:toggle_status:success:close' => 'Le sujet était clos avec succès',
+  'widgets:group_river_widget:title' => 'Activité de groupe',
+  'widgets:group_river_widget:description' => 'Montrez l\'activité du groupe dans un widget.',
+  'widgets:group_river_widget:edit:num_display' => 'Nombre d\'activités',
+  'widgets:group_river_widget:edit:group' => 'Sélectionnez un groupe',
+  'widgets:group_river_widget:edit:no_groups' => 'Vous avez besoin d’être un membre au moins d\'un groupe pour utiliser ce widget',
+  'widgets:group_river_widget:view:not_configured' => 'Ce widget n\'est pas encore configuré',
+  'widgets:group_river_widget:view:more' => 'Activité dans le  \'%s\'  groupe',
+  'widgets:group_river_widget:view:noactivity' => 'Nous n\'avons pu trouver aucune activité',
+  'widgets:group_members:title' => 'Membres du groupe',
+  'widgets:group_members:description' => 'Montrez les membres de ce groupe',
+  'widgets:group_members:edit:num_display' => 'Combien de membres à montrer',
+  'widgets:group_members:view:no_members' => 'Pas de membres de groupes à trouver',
+  'widgets:group_invitations:title' => 'Invitations de groupe',
+  'widgets:group_invitations:description' => 'Montrez des invitations de groupe en cours pour l\'utilisateur actuel',
+  'widgets:discussion:settings:group_only' => 'Montrez uniquement les discussions de groupes dont vous êtes membres',
+  'widgets:discussion:more' => 'Montrez davantage de discussions',
+  'widgets:discussion:description' => 'Montrez les dernières discussions',
+  'widgets:group_forum_topics:description' => 'Montrez les dernières discussions',
+  'widgets:index_groups:description' => 'Répertoriez les groupes de votre communauté',
+  'widgets:index_groups:show_members' => 'Montrez les comptes clients',
+  'widgets:index_groups:featured' => 'Montrez uniquement les groupes affichés',
+  'widgets:index_groups:sorting' => 'Comment trier les groupes',
+  'widgets:index_groups:filter:field' => 'Les groupes de filtres basés sur un champ de groupe',
+  'widgets:index_groups:filter:value' => 'avec valeur',
+  'widgets:index_groups:filter:no_filter' => 'Sans filtre',
+  'widgets:featured_groups:description' => 'Montre une liste aléatoire de groupes vedettes',
+  'widgets:featured_groups:edit:show_random_group' => 'Montre un groupe aléatoire non figuré',
+  'widgets:group_news:title' => 'Nouvelles de groupe',
+  'widgets:group_news:description' => 'Montrez les derniers 5 blogues de divers groupes',
+  'widgets:group_news:no_projects' => 'Pas de groupe configuré',
+  'widgets:group_news:no_news' => 'Pas de blogues pour ce groupe',
+  'widgets:group_news:settings:project' => 'Groupe',
+  'widgets:group_news:settings:no_project' => 'Sélectionnez un groupe',
+  'widgets:group_news:settings:blog_count' => 'Nombre max de blogues',
+  'widgets:group_news:settings:group_icon_size' => 'Taille de l\'icone de groupe',
+  'widgets:group_news:settings:group_icon_size:small' => 'Petit',
+  'widgets:group_news:settings:group_icon_size:medium' => 'Moyen',
+  'group_tools:widgets:start_discussion:title' => 'Démarrez une discussion',
+  'group_tools:widgets:start_discussion:description' => 'Démarrez rapidement une discussion avec un groupe sélectionné',
+  'group_tools:widgets:start_discussion:login_required' => 'Afin de pouvoir utiliser ce widget vous avez besoin d’être connecté.',
+  'group_tools:widgets:start_discussion:membership_required' => 'Vous devez être membre au moins d\'un groupe afin d\'utiliser ce widget. Vous pouvez trouver des groupes intéressants %ici%s.',
+  'group_tools:forms:discussion:quick_start:group' => 'Sélectionner un groupe pour cette discussion',
+  'group_tools:forms:discussion:quick_start:group:required' => 'Veuillez sélectionner un groupe',
+  'group_tools:welcome_message:title' => 'Message de groupe de bienvenue',
+  'group_tools:welcome_message:description' => 'Vous pouvez configurer un message de bienvenue pour les nouveaux utilisateurs qui ont adhéré à ce groupe. Si vous ne voulez pas envoyer un message de bienvenue laissez ce champ vide.',
+  'group_tools:welcome_message:explain' => 'Afin de personnaliser le message vous pouvez utiliser les espaces réservés suivants:
+[nom]: le nom du nouvel utilisateur  (eg. %s)
+[nom groupe]: le nom de ce groupe (eg. %s)
+[groupe_url]: l\'URL à ce groupe (eg. %s)',
+  'group_tools:action:welcome_message:success' => 'Le message de bienvenue a été sauvegardé',
+  'group_tools:welcome_message:subject' => 'Bienvenue à %s',
+  'group_tools:action:revoke_email_invitation:error' => 'Une erreur est apparue lors de la révocation de l\'invitation, veuillez essayer à nouveau.',
+  'group_tools:action:revoke_email_invitation:success' => 'L\'invitation a été révoquée',
+  'group_tools:join:domain_based:tooltip' => 'A cause du domaine de e-mail correspondant, vous pouvez adhérer à ce groupe',
+  'group_tools:domain_based:title' => 'Configurez les domaines e-mail',
+  'group_tools:domain_based:description' => 'Lorsque vous configurez un (ou plusieurs) domaines de messagerie, les utilisateurs avec ce domaine de messagerie joindront automatiquement le groupe pour inscription. Si vous avez également un utilisateur de groupe fermé avec un domaine de messagerie correspondant main, il ne peut se joindre sans demander une adhésion. Vous pouvez configurer de multiples domaines en utilisant une virgule. N\'introduisez pas le signe @',
+  'group_tools:action:domain_based:success' => 'Les nouveaux domaines e-mail ont été ont été sauvegardés',
+  'groups_tools:related_groups:tool_option' => 'Montrez les groupes affiliés',
+  'groups_tools:related_groups:widget:title' => 'Les groupes affiliés',
+  'groups_tools:related_groups:widget:description' => 'Affichez une liste des groupes que vous avez ajouté comme affilié à ce groupe',
+  'groups_tools:related_groups:none' => 'Pas de groupes affiliés trouvés',
+  'group_tools:related_groups:title' => 'Groupes affiliés',
+  'group_tools:related_groups:form:placeholder' => 'Cherchez pour un nouveau groupe affilié',
+  'group_tools:related_groups:form:description' => 'Vous pouvez chercher un nouveau groupe affilié, sélectionnez le de la liste et cliquez ajouter.',
+  'group_tools:action:related_groups:error:same' => 'Vous ne pouvez pas affilié ce groupe à lui-même.',
+  'group_tools:action:related_groups:error:already' => 'Le groupe sélectionné est déjà relaté.',
+  'group_tools:action:related_groups:error:add' => 'Une erreur inconnue est apparue lors de l\'ajout de l\'adhésion, veuillez essayer à nouveau',
+  'group_tools:action:related_groups:success' => 'Le groupe est maintenant affilié',
+  'group_tools:related_groups:notify:owner:subject' => 'Un nouveau groupe a été ajouté',
+  'group_tools:related_groups:notify:owner:message' => 'Bonjour %s,
 
-		// cleanup options
-		'group_tools:cleanup:title' => "Options de la barre latérale du groupe",
-		'group_tools:cleanup:description' => "Ces options n'ont pas d'effet sur les administrateurs.",
-		'group_tools:cleanup:owner_block' => "Limiter l'affichage du bloc d'info du membre",
-		'group_tools:cleanup:owner_block:explain' => "",
-		'group_tools:cleanup:actions' => "Voulez vous autoriser les membres à rejoindre ce groupe",
-		'group_tools:cleanup:actions:explain' => "oui = bouton rejoindre ce groupe. Non =  Demander à rejoindre",
-		'group_tools:cleanup:menu' => "Cacher les outils du groupe",
-		'group_tools:cleanup:menu:explain' => "Cache la barre d'outils, les membres ne pourront accéder au contenu que par les blocs d'infos (widgets).",
-		'group_tools:cleanup:members' => "Cacher le bloc Membres du groupe",
-		'group_tools:cleanup:members:explain' => "",
-		'group_tools:cleanup:search' => "Cacher le champ de recherche dans le groupe",
-		'group_tools:cleanup:search:explain' => "Vous pouvez choisir de cacher la recherche dans le groupe.",
-		'group_tools:cleanup:featured' => "Afficher les groupes à la une dans la barre latérale ",
-		'group_tools:cleanup:featured:explain' => "Vous pouvez choisir d'afficher les groupes à la une dans la barre latérale de votre groupe",
-		'group_tools:cleanup:featured_sorting' => "Si oui, Ordre de tri des groupes à la une",
-		'group_tools:cleanup:featured_sorting:time_created' => "Les plus récents",
-		'group_tools:cleanup:featured_sorting:alphabetical' => "Alphabétique",
-
-		// group default access
-		'group_tools:default_access:title' => "Accès par défaut pour ce groupe",
-		'group_tools:default_access:description' => "Il est recommandé de choisir ce groupe seulement pour conserver les informations à l'intérieur du groupe.",
-		
-		// group notification
-		'group_tools:notifications:title' => "Notifications de groupe",
-		'group_tools:notifications:description' => "Ce groupe a %s membres, %s ont activé les notifications pour ce groupe. Vous pouvez changer les notification pours vos membres.",
-		'group_tools:notifications:disclaimer' => "Attention, cela peut prendre du temps sur les groupes importants.",
-		'group_tools:notifications:enable' => "Activer les notifications pour tous les membre de ce groupe",
-		'group_tools:notifications:disable' => "Désactiver les notifications pour tous les membre de ce groupe",
-		
-		// group profile widgets
-		'group_tools:profile_widgets:title' => "Afficher les blocs d'infos du groupe aux non-membres de ce groupe",
-		'group_tools:profile_widgets:description' => "Ce groupe est privé. Par défaut, les non-membres du groupe ne peuvent pas voir les infos. Vous pouvez changer cela (non conseillé).",
-		'group_tools:profile_widgets:option' => "Autoriser les non-membres à voir les blocs d'infos sur votre page d'accueil de groupe:",
-		
-		// group mail
-		'group_tools:mail:message:from' => "Du groupe",
-		
-		'group_tools:mail:title' => "Envoyer un message aux membres du groupe",
-		'group_tools:mail:form:recipients' => "Nombre de destinataires",
-		'group_tools:mail:form:members:selection' => "Sélectionner les membres individuellement",
-		
-		'group_tools:mail:form:title' => "Sujet",
-		'group_tools:mail:form:description' => "Message",
-	
-		'group_tools:mail:form:js:members' => "Merci de sélectionner au moins un destinataire",
-		'group_tools:mail:form:js:description' => "Merci de saisir un message",
-		
-		// group invite
-		'group_tools:groups:invite:title' => "Inviter des membres dans ce groupe",
-		'group_tools:groups:invite' => "Inviter des membres",
-		
-		'group_tools:group:invite:friends:select_all' => "Sélectionner tous mes contacts",
-		'group_tools:group:invite:friends:deselect_all' => "Déselectionner tous mes contacts",
-		
-		'group_tools:group:invite:users' => "Trouver des membres",
-		'group_tools:group:invite:users:description' => "Saisir le nom d'un membre et sélectionner-le dans la liste",
-		'group_tools:group:invite:users:all' => "Inviter tous les membres dans ce groupe",
-		
-		'group_tools:group:invite:email' => "Via l'adresse email",
-		'group_tools:group:invite:email:description' => "Saisir une adresse email valide et la sélectionner dans la liste",
-		
-		'group_tools:group:invite:csv' => "Using CSV upload",
-		'group_tools:group:invite:csv:description' => "You can upload a CSV file with users to invite.<br />The format must be: displayname;e-mail address. There shouldn't be a header line.",
-		
-		'group_tools:group:invite:text' => "Message personnel (optionnel)",
-		'group_tools:group:invite:add:confirm' => "Etes vous sûr de vouloir directement ajouter ces membres ?",
-		
-		'group_tools:group:invite:resend' => "Envoyer de nouveau l'invitation aux utilisateurs ayant déjà été invités",
-
-		'group_tools:groups:invitation:code:title' => "Invitation de groupe via adresse email",
-		'group_tools:groups:invitation:code:description' => "Si vous avez reçu une invitation à rejoindre le groupe par e-mail, vous pouvez entrer le code invitation ici.", 
-	
-		// group membership requests
-		'group_tools:groups:membershipreq:requests' => "Utilisateurs voulant rejoindre le groupe",
-		'group_tools:groups:membershipreq:invitations' => "Invitations envoyées",
-		'group_tools:groups:membershipreq:invitations:none' => "Aucune invitation envoyée",
-		'group_tools:groups:membershipreq:invitations:revoke:confirm' => "Voulez-vous vraiment annuler cette invitation ?",
-	
-		// group invitations
-		'group_tools:group:invitations:request' => "Invitations en attente de validation",
-		'group_tools:group:invitations:request:revoke:confirm' => "Etes-vous sûr/e de vouloir annuler votre demande d'adhésion ?",
-		'group_tools:group:invitations:request:non_found' => "Il n'y a pas d'invitations en attente.",
-	
-		// group listing
-		'group_tools:groups:sorting:alphabetical' => "Tri alphabétique",
-		'group_tools:groups:sorting:open' => "Groupes ouverts",
-		'group_tools:groups:sorting:closed' => "Groupes fermés",
-	
-		// actions
-		'group_tools:action:error:input' => "Vous ne pouvez pas effectuer cette action",
-		'group_tools:action:error:entities' => "The given GUIDs didn't result in the correct entities",
-		'group_tools:action:error:entity' => "The given GUID didn't result in a correct entity",
-		'group_tools:action:error:edit' => "You don't have access to the given entity",
-		'group_tools:action:error:save' => "There was an error while saving the settings",
-		'group_tools:action:success' => "The settings where saved successfully",
-	
-		// admin transfer - action
-		'group_tools:action:admin_transfer:error:access' => "Vous ne pouvez pas transférer les droits d'administration de ce groupe",
-		'group_tools:action:admin_transfer:error:self' => "Vous ne pouvez pas transférer les droits d'administration de ce groupe à vous même, vous en êtes déjà admin",
-		'group_tools:action:admin_transfer:error:save' => "Erreur. Essayez à nouveau",
-		'group_tools:action:admin_transfer:success' => "L'administration du groupe a été transférée à %s",
-		
-		// group admins - action
-		'group_tools:action:toggle_admin:error:group' => "Erreur inconnue",
-		'group_tools:action:toggle_admin:error:remove' => "Erreur inconnue",
-		'group_tools:action:toggle_admin:error:add' => "Erreur inconnue",
-		'group_tools:action:toggle_admin:success:remove' => "Ce membre n'est plus admin du groupe",
-		'group_tools:action:toggle_admin:success:add' => "Ce membre est devenu admin du groupe",
-		
-		// group mail - action
-		'group_tools:action:mail:success' => "Message envoyé",
-	
-		// group - invite - action
-		'group_tools:action:invite:error:invite'=> "Aucun membre n'a été invité (%s déjà invités, %s déjà membres)",
-		'group_tools:action:invite:error:add'=> "Aucun membre n'a été invité (%s déjà invités, %s déjà membres)",
-		'group_tools:action:invite:success:invite'=> "Vous avez invité %s membres (%s déjà invités and %s déjà membres)",
-		'group_tools:action:invite:success:add'=> "Vous avez invité %s membres (%s déjà invités and %s déjà membres)",
-		
-		// group - invite - accept e-mail
-		'group_tools:action:groups:email_invitation:error:input' => "Entrez votre code invitation reçu par e-mail",
-		'group_tools:action:groups:email_invitation:error:code' => "Ce code invitation n'est plus valide",
-		'group_tools:action:groups:email_invitation:error:join' => "Erreur en rejoignant le groupe %s, Peut-être êtes vous déjà membre?",
-		'group_tools:action:groups:email_invitation:success' => "Vous avez rejoint ce groupe",
-		
-		// group toggle auto join
-		'group_tools:action:toggle_auto_join:error:save' => "Erreur d'enregistrement des paramètres",
-		'group_tools:action:toggle_auto_join:success' => "Les nouveaux paramètres sont pris en compte",
-		
-		// group fix auto_join
-		'group_tools:action:fix_auto_join:success' => "Nouvelles adhésions automatiques au groupe: %s nouveaux membres, %s déjà membres and %s erreurs",
-		
-		// group cleanup
-		'group_tools:actions:cleanup:success' => "Les paramètres ont été pris en compte",
-		
-		// group default access
-		'group_tools:actions:default_access:success' => "Le nouvel accès par défaut pour le groupe a été pris en compte",
-		
-		// group notifications
-		'group_tools:action:notifications:error:toggle' => "Erreur",
-		'group_tools:action:notifications:success:disable' => "Les notifications sont désactivées pour tous vos membres",
-		'group_tools:action:notifications:success:enable' => "Les notifications sont activées pour tous vos membres",
-	
-		// Widgets
-		// Group River Widget
-		'widgets:group_river_widget:title' => "Activité du groupe",
-	    'widgets:group_river_widget:description' => "Affiche les activités d'un groupe",
-
-	    'widgets:group_river_widget:edit:num_display' => "Nb d'activités",
-		'widgets:group_river_widget:edit:group' => "Choisissez un groupe",
-		'widgets:group_river_widget:edit:no_groups' => "Vous devez être membre du groupe pour utliser ce bloc d'info",
-
-		'widgets:group_river_widget:view:not_configured' => "Ce bloc d'info n'est pas encore configuré",
-
-		'widgets:group_river_widget:view:more' => "Activité du groupe '%s'",
-		'widgets:group_river_widget:view:noactivity' => "Pas d'activité pour le moment.",
-		
-		// Group Members
-		'widgets:group_members:title' => "Membres du groupe",
-  		'widgets:group_members:description' => "Affiche les membres de ce groupe",
-
-  		'widgets:group_members:edit:num_display' => "Combien de membres à afficher",
-  		'widgets:group_members:view:no_members' => "Aucun membre pour ce groupe",
-  		
-  		// Group Invitations
-		'widgets:group_invitations:title' => "Invitations",
-	  	'widgets:group_invitations:description' => "Affiche les invitations à des groupes",
-	  	
-	  	// Discussion
-		"widgets:discussion:settings:group_only" => "N'afficher que les discussions des groupes auxquels vous appartenez",
-  		'widgets:discussion:more' => "Voir plus de discussions",
-  		"widgets:discussion:description" => "Affiche les dernières discussions de groupes",
-  		
-		// Forum topic widget
-		'widgets:group_forum_topics:description' => "Affiche les dernières discussions dans les groupes",
-		
-		// index_groups
-		'widgets:index_groups:description' => "Affiche les derniers groupes créés",
-		'widgets:index_groups:show_members' => "Afficher le nombre de membres",
-		'widgets:index_groups:featured' => "N'afficher que les groupes à la une",
-		
-		'widgets:index_group:filter:field' => "Filter les groupes selon un critère",
-		'widgets:index_group:filter:value' => "avec le critère",
-		'widgets:index_group:filter:no_filter' => "pas de filtre",
-		
-		// Featured Groups
-		'widgets:featured_groups:description' => "Affiche une liste aléatoire des groupes à la une",
-	  	'widgets:featured_groups:edit:show_random_group' => "Affiche une liste aléatoire des groupes qui ne sont pas à la une",
-	  	
-		// group_news widget
-		"widgets:group_news:title" => "Info des groupes", 
-		"widgets:group_news:description" => "Affiche les 5 derniers billets de blog de divers groupes", 
-		"widgets:group_news:no_projects" => "Aucun groupe configuré", 
-		"widgets:group_news:no_news" => "Pas de blog pour ce groupe", 
-		"widgets:group_news:settings:project" => "Groupz", 
-		"widgets:group_news:settings:no_project" => "Selectionnez un groupe",
-		"widgets:group_news:settings:blog_count" => "Nb maxi de billets de blog à afficher",
-		"widgets:group_news:settings:group_icon_size" => "Taille de l'icône de groupe",
-		"widgets:group_news:settings:group_icon_size:small" => "Petite",
-		"widgets:group_news:settings:group_icon_size:medium" => "Moyenne",
-		
-	);
-	
-	add_translation("fr", $francais);
-  	
+%sa ajouté votre groupe %s comme un groupe rattaché à %s.',
+  'group_tools:related_groups:entity:remove' => 'Retirez le groupe relaté',
+  'group_tools:action:remove_related_groups:error:not_related' => 'Le groupe n\'est pas lié',
+  'group_tools:action:remove_related_groups:error:remove' => 'Une erreur inconnue est apparue lors de la suppression de la relation, veuillez essayer à nouveau',
+  'group_tools:action:remove_related_groups:success' => 'Ce groupe n\'est plus lié',
+  'group_tools:member_export:title_button' => 'Membres d\'exports',
+  'group_tools:subpermissions' => 'sous groupes',
+  'group_tools:subpermissions:add' => 'Ajoutez un sous groupe',
+  'group_tools:subpermissions:manage_members' => 'Gérer les membres',
+  'group_tools:subpermissions:member' => 'Nom',
+  'group_tools:subpermissions:name' => 'Nom',
+  'group_tools:subpermissions:notenabled' => 'Les sous-groupes ne sont pas autorisés',
+  'group_tools:subpermission' => 'sous-groupe',
+  'group_tools:subpermissions:activate' => 'Autorisez les sous-groupes',
+  'group_tools:subpermissions:add:created' => 'sous-groupe créé',
+  'group_tools:subpermissions:add:noname' => 'Un nom de sous-groupe est requis',
+  'group_tools:subpermissions:nosubpermission' => 'Ce sous -groupe n\'existe pas',
+  'group_tools:subpermissions:nouser' => 'L\'utilisateur n\'est pas membre du groupe parent',
+  'group_tools:subpermissions:delete:cantdelete' => 'Ne pouvait pas supprimer le sous- groupe',
+  'group_tools:subpermissions:delete:confirm' => 'Etes-vous certain de vouloir supprimer ce sous-groupe?',
+  'group_tools:subpermissions:delete_member' => 'Supprimer du sous-groupe',
+  'group_tools:subpermissions:nosubpermissions' => 'Aucun sous- groupe disponible',
+  'group_tools:subpermissions:select' => 'Sélectionner',
+  'group_tools:subpermissions:export' => 'Exporter',
+  'group_tools:action:bulk_delete:success' => 'Les groupes sélectionnés ont été supprimés',
+  'group_tools:action:bulk_delete:error' => 'Une erreur est apparue lors de la suppression des groupes, veuillez essayer encore une fois.',
+);
+add_translation("fr", $language);

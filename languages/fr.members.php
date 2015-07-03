@@ -1,16 +1,10 @@
 <?php
-/**
- * Members french language file
- */
-
-$french = array(
-	'members:label:newest' => "Nouveaux",
-	'members:label:popular' => "Populaires",
-	'members:label:online' => "En ligne",
-	'members:searchname' => "Recherche de membres par nom",
-	'members:searchtag' => "Recherche de membres par mot clé",
-	'members:title:searchname' => "Recherche de membres pour %s",
-	'members:title:searchtag' => "Membres tagués avec %s",
+$language = array (
+  'members:label:newest' => 'Le plus nouveau',
+  'members:label:popular' => 'Populaire',
+  'members:label:online' => 'En ligne',
+  'members:labels:alpha' => 'Alphabétique',
+  'members:search' => 'Cherchez les membres',
+  'members:title:search' => 'Chercher membre pour  %s',
 );
-
-add_translation("fr", $french);
+add_translation("fr", $language);

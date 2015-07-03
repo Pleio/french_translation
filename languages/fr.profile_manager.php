@@ -1,389 +1,276 @@
-<?php 
-	/**
-	* Profile Manager
-	* 
-	* French language
-	* 
-	* @author Human Connect
-	*/
+<?php
+$language = array (
+  'item:object:custom_profile_field' => 'Champ profil personnalisé',
+  'item:object:custom_profile_field_category' => 'Catégorie de champ profil personnalisé',
+  'item:object:custom_profile_type' => 'Type de profil personnalisé',
+  'item:object:custom_group_field' => 'Champ de groupe personnalisé',
+  'profile:custom_profile_type' => 'Type de profil personnalisé',
+  'admin:appearance:group_fields' => 'Éditez champs de groupe',
+  'admin:appearance:export_fields' => 'Exportez données de profil',
+  'admin:appearance:user_summary_control' => 'Contrôle résumé de l\'utilisateur',
+  'admin:groups' => 'Groupes',
+  'admin:groups:export' => 'Groupes d\'export',
+  'admin:users:export' => 'Utilisateurs d\'export',
+  'admin:users:inactive' => 'Liste des utilisateurs inactifs',
+  'profile_manager:settings:registration' => 'Registration',
+  'profile_manager:settings:edit_profile' => 'Éditez profil',
+  'profile_manager:settings:view_profile' => 'Consultez profil',
+  'profile_manager:settings:group' => 'Éditez profil de groupe',
+  'profile_manager:settings:other' => 'Autre',
+  'profile_manager:settings:profile_icon_on_register' => 'Ajoutez',
+  'profile_manager:settings:show_account_hints' => 'Montrez les indices pour les questions d\'enregistrement de compte par défaut',
+  'profile_manager:settings:simple_access_control' => 'Montrez uniquement un menu déroulant de contrôle d\'accès sur modifier un formulaire de profil',
+  'profile_manager:settings:default_profile_type' => 'Type de profil par défaut sur le formulaire d\'enregistrement',
+  'profile_manager:settings:hide_profile_type_default' => 'Cachez le type de profil "par défaut" sur le formulaire d\'enregistrement',
+  'profile_manager:settings:hide_non_editables' => 'Cachez les champs non éditables à partir de l\'édition du formulaire de profil',
+  'profile_manager:settings:edit_profile_mode' => 'Comment montrer l\'écran "éditer profil"',
+  'profile_manager:settings:edit_profile_mode:list' => 'Liste',
+  'profile_manager:settings:edit_profile_mode:tabbed' => 'avec onglet',
+  'profile_manager:settings:show_profile_type_on_profile' => 'Montrez le type de profil des utilisateurs sur le profil',
+  'profile_manager:settings:display_categories' => 'Sélectionnez la façon dont les différentes catégories sont affichées sur le profil',
+  'profile_manager:settings:display_categories:option:plain' => 'Uni',
+  'profile_manager:settings:display_categories:option:accordion' => 'Accordéon',
+  'profile_manager:settings:display_system_category' => 'Montrez une catégorie supplémentaire sur le profil avec des données de système (uniquement pour les administrateurs)',
+  'profile_manager:settings:profile_type_selection' => 'Qui peut changer le type de profil?',
+  'profile_manager:settings:profile_type_selection:option:user' => 'Utilisateur',
+  'profile_manager:settings:profile_type_selection:option:admin' => 'Administrateur uniquement',
+  'profile_manager:settings:description_position' => 'Ou positionner le champ de description (A propos de moi)',
+  'profile_manager:settings:user_summary_control' => 'Laissez le gestionnaire de profil contrôler le résumé de l\'utilisateur  /la vue Référencement',
+  'profile_manager:settings:enable_profile_completeness' => 'Autoriser les informations sur l’exhaustivité du profil',
+  'profile_manager:settings:enable_profile_completeness:option:widget' => 'Montrez un widget',
+  'profile_manager:settings:enable_profile_completeness:option:profile_details' => 'Montrez ci-dessus les détails de profil',
+  'profile_manager:settings:enable_profile_completeness:option:header_profile' => 'Montrez en haut de la page de profil.',
+  'profile_manager:settings:enable_profile_completeness:option:header_all' => 'Montrez en haut de chaque page',
+  'profile_manager:settings:enable_username_change' => 'Autorisez les utilisateurs à modifier leur nom d\'utilisateur dans les paramètres',
+  'profile_manager:settings:enable_username_change:option:admin' => 'Administrateur uniquement',
+  'profile_manager:settings:enable_site_join_river_event' => 'Ajoutez un river event lorsque les gens joignent ce site',
+  'profile_manager:settings:registration:terms' => 'Pour montrer un champ " Acceptez les modalités" sur la page d\'enregistrement, veuillez remplir dans l\'URL les termes ci-dessous',
+  'profile_manager:settings:registration:extra_fields' => 'Ou montrer les champs supplémentaires de profils',
+  'profile_manager:settings:registration:extra_fields:extend' => 'Formulaire par défaut  d\'enregistrement ci-dessous',
+  'profile_manager:settings:registration:extra_fields:beside' => 'Outre un formulaire d\'enregistrement',
+  'profile_manager:settings:registration:free_text' => 'Entrez un texte supplémentaire pour montrer la page d\'enregistrement',
+  'profile_manager:settings:group:group_limit_name' => 'Nombre de fois maximum qu\'un nom de groupe peut être édité',
+  'profile_manager:settings:group:group_limit_description' => 'Nombre de fois maximum que la description d\'un groupe peut être modifiée.',
+  'profile_manager:settings:group:limit:unlimited' => 'Inépuisable',
+  'profile_manager:settings:group:limit:never' => 'Jamais',
+  'profile_manager:settings:group:limit:info' => 'Ces limites ne s\'appliquent pas aux administrateurs du site',
+  'profile_manager:admin:metadata_name' => 'Nom',
+  'profile_manager:admin:metadata_label' => 'Etiquette',
+  'profile_manager:admin:metadata_hint' => 'Indice',
+  'profile_manager:admin:metadata_description' => 'Description',
+  'profile_manager:admin:metadata_label_translated' => 'Étiquette (traduit)',
+  'profile_manager:admin:metadata_label_untranslated' => 'Étiquette (Non traduit)',
+  'profile_manager:admin:metadata_options' => 'Options (virgule séparée)',
+  'profile_manager:admin:field_type' => 'Type de champ',
+  'profile_manager:admin:options:datepicker' => 'Sélecteur de date',
+  'profile_manager:admin:options:pm_datepicker' => 'Sélecteur de date (Style de gestionnaire de profile)',
+  'profile_manager:admin:options:dropdown' => 'Liste déroulante',
+  'profile_manager:admin:options:radio' => 'Radio',
+  'profile_manager:admin:options:multiselect' => 'Multisélection',
+  'profile_manager:admin:options:file' => 'Fichier',
+  'profile_manager:admin:options:pm_rating' => 'Evaluation',
+  'profile_manager:admin:additional_options' => 'Options additionnelles',
+  'profile_manager:admin:show_on_register' => 'Montrez un formulaire d\'enregistrement',
+  'profile_manager:admin:mandatory' => 'Obligatoire',
+  'profile_manager:admin:user_editable' => 'Un utilisateur peut éditer ce champ',
+  'profile_manager:admin:output_as_tags' => 'Montrez le profil en tant qu\'onglet',
+  'profile_manager:admin:admin_only' => 'Champ uniquement e l\'administrateur',
+  'profile_manager:admin:count_for_completeness' => 'Comptez ce champ dans l\'exhaustivité du profil widget',
+  'profile_manager:admin:blank_available' => 'Le champ a une option vide',
+  'profile_manager:admin:option_unavailable' => 'Option non disponible',
+  'profile_manager:admin:show_on_register:description' => 'Si vous voulez que ce champ soit sur le formulaire d\'enregistrement',
+  'profile_manager:admin:mandatory:description' => 'Si vous voulez que ce champ soit obligatoire (s\'applique uniquement au formulaire d\'enregistrement)',
+  'profile_manager:admin:user_editable:description' => 'Si établi  sur "Non" les utilisateurs ne peuvent pas éditer ce champ (pratique lorsque les données sont gérées dans un système externe)',
+  'profile_manager:admin:output_as_tags:description' => 'Une sortie des données sera gérée comme des balises (s\'applique uniquement au profil de l\'utilisateur)',
+  'profile_manager:admin:admin_only:description' => 'Sélectionnez \'oui\' si un champ est uniquement disponible pour les administrateurs',
+  'profile_manager:admin:blank_available:description' => 'Sélectionnez \'oui\' si une option vide devrait être ajoutée aux options du champ',
+  'profile_manager:profile_fields:list:title' => 'Champs de profil',
+  'profile_manager:profile_fields:no_fields' => 'Actuellement aucun champ n\'est configuré en utilisant le  plugin de gestionnaire de profil. Ajoutez le votre ou importez une des actions ci-dessous.',
+  'profile_manager:profile_fields:add' => 'Ajoutez un nouveau champ de profil',
+  'profile_manager:profile_fields:edit' => 'Éditez un champ de profil',
+  'profile_manager:profile_fields:add:description' => 'Vous pouvez éditer ici les champs qu\'un utilisateur peut éditer sur son profil',
+  'profile_manager:group_fields:list:title' => 'Champs de profils de groupe',
+  'profile_manager:group_fields:add:description' => 'Vous pouvez éditer ici les champs qui montrent une page de profil de groupe.',
+  'profile_manager:group_fields:add' => 'Ajoutez un nouveau champ de profil de groupe',
+  'profile_manager:group_fields:edit' => 'Editez un champ de profil de groupe',
+  'profile_manager:categories:add' => 'Ajoutez une nouvelle catégorie',
+  'profile_manager:categories:edit' => 'Éditez une catégorie',
+  'profile_manager:categories:list:title' => 'Catégories',
+  'profile_manager:categories:list:default' => 'Defaut',
+  'profile_manager:categories:list:system' => 'Système (administrateur uniquement)',
+  'profile_manager:categories:list:view_all' => 'Visualiser tous les champs',
+  'profile_manager:categories:list:no_categories' => 'Pas de catégories définies',
+  'profile_manager:categories:delete:confirm' => 'Etes vous certain de souhaiter supprimer cette catégorie?',
+  'profile_manager:profile_types:add' => 'Ajoutez un type de nouveau profil',
+  'profile_manager:profile_types:edit' => 'Éditez un type de profil',
+  'profile_manager:profile_types:list:title' => 'Types de profil',
+  'profile_manager:profile_types:list:no_types' => 'Pas de types de profils définis',
+  'profile_manager:profile_types:delete:confirm' => 'Etes vous certain de souhaiter supprimer ce type de profil?',
+  'profile_manager:user_details:profile_type' => 'Type de profil',
+  'profile_manager:user_summary_control:config' => 'Configuration',
+  'profile_manager:user_summary_control:info' => 'Ajoutez les champs aux différents conteneurs et voyez dans l\'aperçu le résultat de la configuration. Si vous êtes satisfait vous pouvez "sauvegarder" la configuration.',
+  'profile_manager:user_summary_control:container:title' => 'Titre',
+  'profile_manager:user_summary_control:container:entity_menu' => 'Menu d\'entité',
+  'profile_manager:user_summary_control:container:subtitle' => 'Sous-titre',
+  'profile_manager:user_summary_control:container:content' => 'Contenu',
+  'profile_manager:user_summary_control:options:spacers' => 'Ecarteurs',
+  'profile_manager:user_summary_control:options:spacers:new_line' => 'Nouvelle ligne',
+  'profile_manager:user_summary_control:options:spacers:space' => 'Espace',
+  'profile_manager:user_summary_control:options:spacers:dash' => '-',
+  'profile_manager:admin:users:inactive:last_login' => 'Dernière connexion avant',
+  'profile_manager:admin:users:inactive:list' => 'Utilisateurs inactifs',
+  'profile_manager:admin:users:inactive:never' => 'Jamais',
+  'profile_manager:admin:users:inactive:download' => 'Télécharger',
+  'profile_manager:actions:title' => 'Actions',
+  'profile_manager:actions:reset:description' => 'Retire tous les champs de profils personnalisés',
+  'profile_manager:actions:reset:confirm' => 'Etes-vous certain de souhaiter réinitialiser tous les champs de profil?',
+  'profile_manager:actions:reset:error:unknown' => 'Erreur inconnue apparue lors du rétablissement de tous les champs du profil',
+  'profile_manager:actions:reset:error:wrong_type' => 'Type de champ profil incorrect (groupe ou profil)',
+  'profile_manager:actions:reset:success' => 'Réinitialisation avec succès',
+  'profile_manager:actions:import:from_custom' => 'Importez les champs personnalisés',
+  'profile_manager:actions:import:from_custom:description' => 'Importations définies précédemment (avec une fonctionnalité par défaut Elgg) des champs de profil.',
+  'profile_manager:actions:import:from_custom:confirm' => 'Etes vous certain de souhaiter importer les champs personnalisés?',
+  'profile_manager:actions:import:from_custom:no_fields' => 'Pas de champs personnalisés disponibles pour l\'importation',
+  'profile_manager:actions:import:from_custom:new_fields' => 'Importé avec succès <b>%s</b> nouveaux champs',
+  'profile_manager:actions:import:from_default' => 'Champs d\'importation par défaut',
+  'profile_manager:actions:import:from_default:description' => 'Importations des champs par défaut Elgg',
+  'profile_manager:actions:import:from_default:confirm' => 'Etes vous certain de souhaiter importer les champs par défaut?',
+  'profile_manager:actions:import:from_default:no_fields' => 'Pas de champs par défaut pour l\'importation',
+  'profile_manager:actions:import:from_default:new_fields' => 'Importé avec succès <b>%s</b> nouveaux champs',
+  'profile_manager:actions:import:from_default:error:wrong_type' => 'Type de champ de profil incorrect (groupe ou profil)',
+  'profile_manager:actions:export' => 'Exportation',
+  'profile_manager:actions:export:description' => 'Exportez les données de profil dans un fichier CSV',
+  'profile_manager:export:title' => 'Exportez les données de profil',
+  'profile_manager:export:description:custom_profile_field' => 'Cette fonction exportera toutes les métadonnées  <b>utilisateur </b> basées sur les champs sélectionnés.',
+  'profile_manager:export:description:custom_group_field' => 'Cette fonction exportera toutes les métadonnées basées sur les champs sélectionnés<b>groupe</b>.',
+  'profile_manager:export:list:title' => 'Sélectionnez les champs que vous voulez exporter',
+  'profile_manager:export:list:include_group_membership' => 'Inclure le partenariat de groupe',
+  'profile_manager:export:nofields' => 'Pas de champs de profil personnalisé disponible pour l\'export',
+  'profile_manager:group:edit:limit' => 'Vous pouvez éditer ce champ %s plusieurs fois (s)',
+  'profile_manager:actions:configuration:backup' => 'Sauvegarde',
+  'profile_manager:actions:configuration:backup:description' => 'Sauvegardez la configuration de ces champs (les catégories et types ne sont pas soutenus)',
+  'profile_manager:actions:configuration:restore' => 'Rétablir',
+  'profile_manager:actions:configuration:restore:description' => 'Restaurez un fichier de configuration précédemment sauvegardé (<b> vous perdrez les relations entre les champs et les catégories</b>)',
+  'profile_manager:actions:configuration:restore:upload' => 'Rétablir',
+  'profile_manager:actions:restore:success' => 'Rétablir avec succès',
+  'profile_manager:actions:restore:error:deleting' => 'Erreur lors de la restauration: ne pouvait pas effacer les champs actuels',
+  'profile_manager:actions:restore:error:fieldtype' => 'Erreur lors de la restauration: types de champ qui ne correspondent pas',
+  'profile_manager:actions:restore:error:corrupt' => 'Erreur lors de la restauration',
+  'profile_manager:actions:restore:error:json' => 'Erreur lors de la restauration: fichier invalide json',
+  'profile_manager:actions:restore:error:nofile' => 'Erreur lors de la restauration: pas de fichier à télécharger',
+  'profile_manager:actions:new:success' => 'Champ de profil personnalisé ajouté avec succès',
+  'profile_manager:actions:new:error:metadata_name_missing' => 'Pas de nom de métadonnées fournies',
+  'profile_manager:actions:new:error:metadata_name_invalid' => 'Nom de métadonnées est un nom invalide',
+  'profile_manager:actions:new:error:metadata_options' => 'Vous avez besoin d\'entrer des options lors de l\'utilisation de ce type',
+  'profile_manager:actions:new:error:unknown' => 'Erreur inconnue apparue lors de la sauvegarde d\'un champ de profil nouvellement personnalisé',
+  'profile_manager:action:new:error:type' => 'Type de champ de profil incorrect (groupe ou profil)',
+  'profile_manager:actions:edit:error:unknown' => 'Erreur obtention de  champ de données de profil',
+  'profile_manager:actions:delete:confirm' => 'Etes-vous certain de souhaiter supprimer ce champ?',
+  'profile_manager:actions:delete:error:unknown' => 'Erreur inconnue apparue lors de la suppression',
+  'profile_manager:actions:toggle_option:error:unknown' => 'Erreur inconnue apparue lors de la modification de l\'option',
+  'profile_manager:actions:change_category:error:unknown' => 'Une erreur inconnue est apparue lors de la modification de la catégorie',
+  'profile_manager:action:category:add:error:name' => 'Aucun nom ou nom invalide fourni pour la catégorie.',
+  'profile_manager:action:category:add:error:object' => 'Erreur lors de la création de la catégorie d\'objet',
+  'profile_manager:action:category:add:error:save' => 'Erreur lors de la sauvegarde de la catégorie d\'objet',
+  'profile_manager:action:category:add:succes' => 'La catégorie a été créé avec succès',
+  'profile_manager:action:category:delete:error:guid' => 'Aucun GUID fourni',
+  'profile_manager:action:category:delete:error:type' => 'Le GUID fourni n\'est pas une catégorie de champ de profil personnalisé',
+  'profile_manager:action:category:delete:error:delete' => 'Une erreur est apparue lors de la suppression de la catégorie',
+  'profile_manager:action:category:delete:succes' => 'La catégorie a été supprimée avec succès',
+  'profile_manager:action:profile_types:add:error:name' => 'Pas de nom ou nom invalide fourni pour le type de profile personnalisé',
+  'profile_manager:action:profile_types:add:error:object' => 'Erreur lors de la création du type de profil personnalisé',
+  'profile_manager:action:profile_types:add:error:save' => 'Erreur lors de la sauvegarde du type de profil personnalisé',
+  'profile_manager:action:profile_types:add:succes' => 'Le type de profil personnalisé a été créé avec succès',
+  'profile_manager:action:profile_types:delete:error:guid' => 'Pas de GUID fourni',
+  'profile_manager:action:profile_types:delete:error:type' => 'Le GUID fourni n\'est pas un type de profil personnalisé',
+  'profile_manager:action:profile_types:delete:error:delete' => 'Une erreur inconnue est apparue lors de la suppression du type de profil personnalisé',
+  'profile_manager:action:profile_types:delete:succes' => 'Le type de profil personnalisé a été supprimé avec succès.',
+  'profile_manager:action:username:change:succes' => 'A modifié avec succès votre nom d\'utilisateur',
+  'profile_manager:tooltips:profile_field' => '<b>Champ de profil</b><br>
+Vous pouvez ajouter ici un champ avec un nouveau profil.<br><br>
+Si vous laissez l\'étiquette vide, vous pouvez internationaliserl\'étiquette de champ de profil (<i>profil:[nom]</i>).<br><br>
+Utilisez le champ d\'indices pour fournir des formulaires de saisie (enregistrer et profiler/éditez groupet) a hoverable icon with a field description.
+If you leave the hint empty, you can internationalize the hint (<i>profile:hint:[name]</i>).<br><br>
+Options are only mandatory for fieldtypes <i>Dropdown, Radio and MultiSelect</i>.',
+  'profile_manager:tooltips:profile_field_additional' => '<b>Montrez le registre</b><br>
+Si vous voulez que ce champ soit sur le formulaire d\' enregistrement.<br><br>
 
-	$french = array(
-					
-		// entity names
-		'item:object:custom_profile_field' => 'Champ de profil',
-		'item:object:custom_profile_field_category' => 'Catégorie de profil',
-		'item:object:custom_profile_type' => 'Type de profil',
-		'item:object:custom_group_field' => 'Champ de groupe',
-	
-		'profile:custom_profile_type' => 'Type de profil',
-		
-		// admin menu 
-		'admin:appearance:group_fields' => "Edit Group Fields",
-		'admin:appearance:export_fields' => "Export Profile Data",
-		'admin:appearance:user_summary_control' => "User Summary Control",
+<b>Mandatory</b><br>
+If you want this field to be mandatory (only applies to the register form).<br><br>
 
-		'admin:groups' => "Groups",
-		'admin:groups:export' => "Export groups",
-		
-		'admin:users:export' => "Export users",
-		'admin:users:inactive' => "List inactive users",
-	
-		// plugin settings
-		'profile_manager:settings:registration' => 'Registration',
-		'profile_manager:settings:edit_profile' => 'Edit Profile',
-		'profile_manager:settings:view_profile' => 'View Profile',
-		'profile_manager:settings:other' => 'Other',
-	
-		'profile_manager:settings:profile_icon_on_register' => 'Add mandatory profile icon input field on register form',
-		'profile_manager:settings:simple_access_control' => 'Show just one access control dropdown on edit profile form',
-		'profile_manager:settings:default_profile_type' => "Default profile type on registration form",
-		'profile_manager:settings:hide_profile_type_default' => "Hide the 'Default' profile type on registration form",
-	
-		'profile_manager:settings:hide_non_editables' => 'Hide the non editable fields from the Edit Profile form',
-	
-		'profile_manager:settings:edit_profile_mode' => "How to show the 'edit profile' screen",
-		'profile_manager:settings:edit_profile_mode:list' => "List",
-		'profile_manager:settings:edit_profile_mode:tabbed' => "Tabbed",
-	
-		'profile_manager:settings:show_profile_type_on_profile' => "Show the users profile type on the profile",
-	
-		'profile_manager:settings:display_categories' => 'Select how the different categories are displayed on the profile',
-		'profile_manager:settings:display_categories:option:plain' => 'Plain',
-		'profile_manager:settings:display_categories:option:accordion' => 'Accordion',
-	
-		'profile_manager:settings:display_system_category' => 'Show an extra category on the profile with systemdata (only for admins)',
-	
-		'profile_manager:settings:profile_type_selection' => 'Who can change the profile type?',
-		'profile_manager:settings:profile_type_selection:option:user' => 'User',
-		'profile_manager:settings:profile_type_selection:option:admin' => 'Admin only',
+<b>éditable par l\'utilisateur</b><br>
+Si établi sur \'Pas\' d\'utilisateurs peuvent éditer ce champ (pratique lorsque les données sont gérées dans un système externe).<br><br>
 
-		'profile_manager:settings:description_position' => 'Where to position the description ("About me") field',
-		'profile_manager:settings:user_summary_control' => 'Let Profile Manager control the user summary / listing view',
-		
-		'profile_manager:settings:enable_profile_completeness_widget' => "Enable the profile completeness widget",
-		'profile_manager:settings:enable_username_change' => "Allow users to change their username in settings",
-		'profile_manager:settings:enable_username_change:option:admin' => "Admin only",
-		'profile_manager:settings:enable_site_join_river_event' => "Add a river event when people join this site",
-		
-		'profile_manager:settings:registration:terms' => "To show an 'Accept terms' field on the registration page, please fill in the URL to the terms below",
-		'profile_manager:settings:registration:extra_fields' => "Where to show extra profile fields",
-		'profile_manager:settings:registration:extra_fields:extend' => "Below default registration form",
-		'profile_manager:settings:registration:extra_fields:beside' => "Beside registration form",
-		'profile_manager:settings:registration:free_text' => "Enter extra text to show on the registration page",
-		
-		// Field Configuration
-		'profile_manager:admin:metadata_name' => 'Name',	
-		'profile_manager:admin:metadata_label' => 'Label',
-		'profile_manager:admin:metadata_hint' => 'Hint',
-		'profile_manager:admin:metadata_description' => 'Description',
-		'profile_manager:admin:metadata_label_translated' => 'Label (Translated)',
-		'profile_manager:admin:metadata_label_untranslated' => 'Label (Untranslated)',
-		'profile_manager:admin:metadata_options' => 'Options (comma separated)',
-		'profile_manager:admin:field_type' => "Field Type",
-		'profile_manager:admin:options:datepicker' => 'Datepicker',
-		'profile_manager:admin:options:pm_datepicker' => 'Datepicker (Profile Manager Style)',
-		'profile_manager:admin:options:dropdown' => 'Dropdown',
-		'profile_manager:admin:options:radio' => 'Radio',
-		'profile_manager:admin:options:multiselect' => 'MultiSelect',
-		'profile_manager:admin:options:file' => 'File',
-		'profile_manager:admin:options:pm_rating' => 'Rating',
-		
-		'profile_manager:admin:additional_options' => 'Additional options',
-		'profile_manager:admin:show_on_register' => 'Show on register form',	
-		'profile_manager:admin:mandatory' => 'Mandatory',
-		'profile_manager:admin:user_editable' => 'User can edit this field',
-		'profile_manager:admin:output_as_tags' => 'Show on profile as tags',
-		'profile_manager:admin:admin_only' => 'Admin only field',
-		'profile_manager:admin:count_for_completeness' => 'Count this field in profile completeness widget',
-		'profile_manager:admin:blank_available' => 'Field has a blank option',		
-		'profile_manager:admin:option_unavailable' => 'Option unavailable',
-	
-		// field options additionals description
-		'profile_manager:admin:show_on_register:description' => "If you want this field to be on the register form.",	
-		'profile_manager:admin:mandatory:description' => "If you want this field to be mandatory (only applies to the register form).",
-		'profile_manager:admin:user_editable:description' => "If set to 'No' users can't edit this field (handy when data is managed in an external system).",
-		'profile_manager:admin:output_as_tags:description' => "Data output will be handle as tags (only applies on user profile).",
-		'profile_manager:admin:admin_only:description' => "Select 'Yes' if field is only available for admins.",
-		'profile_manager:admin:blank_available:description' => "Select 'Yes' if a blank option should be added to the field options",	
-	
-		// profile fields
-		'profile_manager:profile_fields:list:title' => "Profile Fields",	
-	
-		'profile_manager:profile_fields:no_fields' => "Currently no fields are configured using the Profile Manager plugin. Add your own or import with one of the actions below.",
-		
-		'profile_manager:profile_fields:add' => "Add a new profile field",
-		'profile_manager:profile_fields:edit' => "Edit a profile field",
-		'profile_manager:profile_fields:add:description' => "Here you can edit the fields a user can edit on his/her profile",
-	
-		// group fields
-		'profile_manager:group_fields:list:title' => "Group Profile Fields",	
-	
-		'profile_manager:group_fields:add:description' => "Here you can edit the fields that show on a group profile page",
-		'profile_manager:group_fields:add' => "Add a new group profile field",
-		'profile_manager:group_fields:edit' => "Edit a group profile field",
-	
-		// Custom fields categories
-		'profile_manager:categories:add' => "Add a new category",
-		'profile_manager:categories:edit' => "Edit a category",
-		'profile_manager:categories:list:title' => "Categories",
-		'profile_manager:categories:list:default' => "Default",
-		'profile_manager:categories:list:system' => "System (admin only)",	
-		'profile_manager:categories:list:view_all' => "View all fields",
-		'profile_manager:categories:list:no_categories' => "No categories defined",
-		'profile_manager:categories:delete:confirm' => "Are you sure you wish to delete this category?",
-		
-		// Custom Profile Types
-		'profile_manager:profile_types:add' => "Add a new profile type",
-		'profile_manager:profile_types:edit' => "Edit a profile type",
-		'profile_manager:profile_types:list:title' => "Profile Types",
-		'profile_manager:profile_types:list:no_types' => "No profile types defined",
-		'profile_manager:profile_types:delete:confirm' => "Are you sure you wish to delete this profile type?",
-		'profile_manager:user_details:profile_type' => "Profile Type",
-		
-		// User Summary Control
-		'profile_manager:user_summary_control:config' => "Configuration",
-		'profile_manager:user_summary_control:info' => "Add fields to the different containers and see in the preview the result of the configuration. If you are satisfied you can 'Save' the configuration.",
-		
-		'profile_manager:user_summary_control:container:title' => "Title",
-		'profile_manager:user_summary_control:container:entity_menu' => "Entity Menu",
-		'profile_manager:user_summary_control:container:subtitle' => "Subtitle",
-		'profile_manager:user_summary_control:container:content' => "Content",
-		
-		'profile_manager:user_summary_control:options:spacers' => "Spacers",
-		'profile_manager:user_summary_control:options:spacers:new_line' => "New line",
-		'profile_manager:user_summary_control:options:spacers:space' => "Space",
-		'profile_manager:user_summary_control:options:spacers:dash' => "-",
-		
-		// profile manager inactive users
-		'profile_manager:admin:users:inactive:last_login' => "Last login before",
-		'profile_manager:admin:users:inactive:list' => "Inactive users",
-		'profile_manager:admin:users:inactive:never' => "Never",
-		'profile_manager:admin:users:inactive:download' => "Download",
-	
-		// admin actions
-		'profile_manager:actions:title' => 'Actions',
-	
-		// Reset
-		'profile_manager:actions:reset:description' => 'Removes all custom profile fields',
-		'profile_manager:actions:reset:confirm' => 'Are you sure you wish to reset all profile fields?',
-		'profile_manager:actions:reset:error:unknown' => 'Unknown error occurred while resetting all profile fields',
-		'profile_manager:actions:reset:error:wrong_type' => 'Wrong profile field type (group or profile)',
-		'profile_manager:actions:reset:success' => 'Reset succesful',
-	
-		// import from custom
-		'profile_manager:actions:import:from_custom' => 'Import custom fields',
-		'profile_manager:actions:import:from_custom:description' => 'Imports previous defined (with default Elgg functionality) profile fields',
-		'profile_manager:actions:import:from_custom:confirm' => 'Are you sure you wish to import custom fields?',
-		'profile_manager:actions:import:from_custom:no_fields' => 'No custom fields available for import',
-		'profile_manager:actions:import:from_custom:new_fields' => 'Succesfully imported <b>%s</b> new fields',
-	
-		// import from default
-		'profile_manager:actions:import:from_default' => 'Import default fields',
-		'profile_manager:actions:import:from_default:description' => "Imports Elgg's default fields",
-		'profile_manager:actions:import:from_default:confirm' => 'Are you sure you wish to import default fields?',
-		'profile_manager:actions:import:from_default:no_fields' => 'No default fields available for import',
-		'profile_manager:actions:import:from_default:new_fields' => 'Succesfully imported <b>%s</b> new fields',
-		'profile_manager:actions:import:from_default:error:wrong_type' => 'Wrong profile field type (group or profile)',
-	
-		// Export
-		'profile_manager:actions:export' => "Export",
-		'profile_manager:actions:export:description' => "Exporter les données des profils dans un fichier CSV",
-		'profile_manager:export:title' => "Exporte les donnée des profils",
-		'profile_manager:export:description:custom_profile_field' => "Cette fonction exporte les données des profils des <b>membres</b> selon les champs sélectionnés.",
-		'profile_manager:export:description:custom_group_field' => "Cette fonction exporte les données des profils des <b>groupes</b> selon les champs sélectionnés.",
-		'profile_manager:export:list:title' => "Sélectionner les champs de profil à exporter",
-		'profile_manager:export:nofields' => "aucun champ de donnée complémentaire à exporter",
-	
-		// Configuration Backup and Restore
-		'profile_manager:actions:configuration:backup' => "Backup",
-		'profile_manager:actions:configuration:backup:description' => "Backup the configuration of these fields (categories and types are not backed up)",
-		'profile_manager:actions:configuration:restore' => "Restore",
-		'profile_manager:actions:configuration:restore:description' => "Restore a previously backed up configuration file (<b>you will loose relations between fields and categories</b>)",
-		
-		'profile_manager:actions:configuration:restore:upload' => "Restore",
-	
-		'profile_manager:actions:restore:success' => "Restore successful",
-		'profile_manager:actions:restore:error:deleting' => "Error while restoring: couldn't delete current fields",	
-		'profile_manager:actions:restore:error:fieldtype' => "Error while restoring: fieldtypes do not match",
-		'profile_manager:actions:restore:error:corrupt' => "Error while restoring: backup file seems to be corrupt or information is missing",
-		'profile_manager:actions:restore:error:json' => "Error while restoring: invalid json file",
-		'profile_manager:actions:restore:error:nofile' => "Error while restoring: no file uploaded",
-	
-		// new
-		'profile_manager:actions:new:success' => 'Succesfully added new custom profile field',	
-		'profile_manager:actions:new:error:metadata_name_missing' => 'No metadata name provided',	
-		'profile_manager:actions:new:error:metadata_name_invalid' => 'Metadata name is an invalid name',	
-		'profile_manager:actions:new:error:metadata_options' => 'You need to enter options when using this type',	
-		'profile_manager:actions:new:error:unknown' => 'Unknown error occurred when saving a new custom profile field',
-		'profile_manager:action:new:error:type' => 'Wrong profile field type (group or profile)',
-		
-		// edit
-		'profile_manager:actions:edit:error:unknown' => 'Error fetching profile field data',
-	
-		//delete
-		'profile_manager:actions:delete:confirm' => 'Are you sure you wish to delete this field?',
-		'profile_manager:actions:delete:error:unknown' => 'Unknown error occurred while deleting',
+<b>Show as tags</b><br>
+Data output will be handle as tags (only applies on user profile).<br><br>
 
-		// toggle option
-		'profile_manager:actions:toggle_option:error:unknown' => 'Unknown error occurred while changing the option',
-	
-		// category to field
-		'profile_manager:actions:change_category:error:unknown' => "An unknown error occured while changing the category",
-	
-		// add category
-		'profile_manager:action:category:add:error:name' => "No name or an invalid name provided for the category",
-		'profile_manager:action:category:add:error:object' => "Error while creating the category object",
-		'profile_manager:action:category:add:error:save' => "Error while saving the category object",
-		'profile_manager:action:category:add:succes' => "The category was created succesfully",
-	
-		// delete category
-		'profile_manager:action:category:delete:error:guid' => "No GUID provided",
-		'profile_manager:action:category:delete:error:type' => "The provided GUID is not a custom profile field category",
-		'profile_manager:action:category:delete:error:delete' => "An error occured while deleting the category",
-		'profile_manager:action:category:delete:succes' => "The category was deleted succesfully",
-	
-		// add profile type
-		'profile_manager:action:profile_types:add:error:name' => "No name or an invalid name provided for the Custom Profile Type",
-		'profile_manager:action:profile_types:add:error:object' => "Error while creating the Custom Profile Type",
-		'profile_manager:action:profile_types:add:error:save' => "Error while saving the Custom Profile Type",
-		'profile_manager:action:profile_types:add:succes' => "The Custom profile Type was created succesfully",
-		
-		// delete profile type
-		'profile_manager:action:profile_types:delete:error:guid' => "No GUID provided",
-		'profile_manager:action:profile_types:delete:error:type' => "The provided GUID is not an Custom Profile Type",
-		'profile_manager:action:profile_types:delete:error:delete' => "An unknown error occured while deleting the Custom Profile Type",
-		'profile_manager:action:profile_types:delete:succes' => "The Custom Profile Type was deleted succesfully",
-		
-		// change username action
-		'profile_manager:action:username:change:succes' => "Successfully changed your username",
-	
-		// Tooltips
-		'profile_manager:tooltips:profile_field' => "
-			<b>Profile Field</b><br />
-			Here you can add a new profile field.<br /><br />
-			If you leave the label empty, you can internationalize the profile field label (<i>profile:[name]</i>).<br /><br />
-			Use the hint field to supply on input forms (register and profile/group edit) a hoverable icon with a field description.
-			If you leave the hint empty, you can internationalize the hint (<i>profile:hint:[name]</i>).<br /><br />
-			Options are only mandatory for fieldtypes <i>Dropdown, Radio and MultiSelect</i>.
-		",
-		'profile_manager:tooltips:profile_field_additional' => "
-			<b>Show on register</b><br />
-			If you want this field to be on the register form.<br /><br />
-			
-			<b>Mandatory</b><br />
-			If you want this field to be mandatory (only applies to the register form).<br /><br />
-			
-			<b>User editable</b><br />
-			If set to 'No' users can't edit this field (handy when data is managed in an external system).<br /><br />
-			
-			<b>Show as tags</b><br />
-			Data output will be handle as tags (only applies on user profile).<br /><br />
-			
-			<b>Admin only field</b><br />
-			Select 'Yes' if field is only available for admins.
-		",
-		'profile_manager:tooltips:category' => "
-			<b>Category</b><br />
-			Here you can add a new profile category.<br /><br />
-			If you leave the label empty, you can internationalize the category label (<i>profile:categories:[name]</i>).<br /><br />
-			
-			If Profile Types are defined you can choose on which profile type this category applies. If no profile is specified, the category applies to all profile types (even undefined).
-		",
-		'profile_manager:tooltips:category_list' => "
-			<b>Categories</b><br />
-			Shows a list of all configured categories.<br /><br />
-			
-			<i>Default</i> is the category that applies to all profiles.<br /><br />
-			
-			Add fields to these categories by dropping them on the categories.<br /><br />
-			
-			Click the category label to filter the visible fields. Clicking view all fields shows all fields.<br /><br />
-			
-			You can also change the order of the categories by dragging them (<i>Default can't be dragged</i>. <br /><br />
-			
-			Click the edit icon to edit the category.
-		",
-		'profile_manager:tooltips:profile_type' => "
-			<b>Profile Type</b><br />
-			Here you can add a new profile type.<br /><br />
-			If you leave the label empty, you can internationalize the profile type label (<i>profile:types:[name]</i>).<br /><br />
-			Enter a description which users can see when selecting this profile type or leave it empty to internationalize (<i>profile:types:[name]:description</i>).<br /><br />
-			
-			If Categories are defined you can choose which categories apply to this profile type.
-		",
-		'profile_manager:tooltips:profile_type_list' => "
-			<b>Profile Types</b><br />
-			Shows a list of all configured profile types.<br /><br />
-			Click the edit icon to edit the profile type.
-		",
-		'profile_manager:tooltips:actions' => "
-			<b>Actions</b><br />
-			Various actions related to these profile fields.
-		",
-	
-		// widgets
-		'widgets:profile_completeness:title' => 'Complétude du profil',
-		'widgets:profile_completeness:description' => 'Affiche l\'avancement vers le profil complet.',
-		'widgets:profile_completeness:view:complete' => 'Félicitation votre profil est maintenant complet à 100%!',
-		
-		'widgets:register:title' => "Inscription",
-		'widgets:register:description' => "Afficher le formulaire d'inscription",
-		'widgets:register:loggedout' => "Vous devez être déconnecté/e pour voir ce widget",
-	
-		// datepicker		
-		'profile_manager:datepicker:trigger' => 'Choisir une date',
-		'profile_manager:datepicker:output:dateformat' => '%a %d %b %Y', // For available notations see http://nl.php.net/manual/en/function.strftime.php
-		'profile_manager:datepicker:input:localisation' => '', // change it to the available localized js files in custom_profile_fields/vendors/jquery.datepick.package-3.5.2 (e.g. jquery.datepick-nl.js), leave blank for default 
-		'profile_manager:datepicker:input:dateformat' => '%m/%d/%Y', // Notation is based on strftime, but must result in output like http://keith-wood.name/datepick.html#format
-		'profile_manager:datepicker:input:dateformat_js' => 'mm/dd/yyyy', // Notation is based on strftime, but must result in output like http://keith-wood.name/datepick.html#format
+<b>Admin only field</b><br>
+Select \'Yes\' if field is only available for admins.',
+  'profile_manager:tooltips:category' => '<b>Catégorie</b><br>
+Vous pouvez ajouter ici une catégorie de nouveau profil.<br><br>
+Si vous laissez le libellé vide, vous pouvez internationaliser l\'étiquette de catégorie (<i>profil:catégories:[nom]</i>).<br><br>
 
-		'profile_manager:input:multi_select:empty_text' => 'Merci de choisir ...',
-	
-		// Edit profile => profile type selector
-		'profile_manager:profile:edit:custom_profile_type:label' => "Choisissez votre type de profil",
-		'profile_manager:profile:edit:custom_profile_type:description' => "Description du type de profil",
-		'profile_manager:profile:edit:custom_profile_type:default' => "Profil par défaut",
-	
-		// non_editable
-		'profile_manager:non_editable:info' => 'Ce champ ne peut être modifié',
-		
-		// register form mandatory notice
-		'profile_manager:register:mandatory' => "Les champs marqué d'une étoile sont obligatoires",
-		
-		// register profile icon
-		'profile_manager:register:profile_icon' => 'Vous devez ajouter votre icône de profil',
-		
-		// register accept terms
-		'profile_manager:registration:accept_terms' => "J'ai lu et j'accepte les %stermes d'utilisation%s",
-	
-		// simple access control
-		'profile_manager:simple_access_control' => 'Choisissez qui a le droit de voir vos informations de profil',
-	
-		// register pre check
-		'profile_manager:register_pre_check:missing' => 'Ce champ est obligatoire: %s',
-		'profile_manager:register_pre_check:terms' => 'Vous devez accepter les termes d\'utilisation du site pour pouvoir vous enregistrer',
-		'profile_manager:register_pre_check:profile_icon:error' => 'Erreur de chargement de votre icône de profil (Peut-être la taille est trop importante)',
-		'profile_manager:register_pre_check:profile_icon:nosupportedimage' => 'Vitre icône de profil n`\'est pas au bon format (jpg, gif, png seulement)',
-	
-		// Admin add user form
-		'profile_manager:admin:adduser:notify' => "Notifier le nouveau membre par mail",
-		'profile_manager:admin:adduser:use_default_access' => "Extra metadata created based on site default access level",
-		'profile_manager:admin:adduser:extra_metadata' => "Compléter le profil en remplissant d'autres champs",
-		
-		// change username form
-		'profile_manager:account:username:button' => "Changer votre nom d'utilisateur",
-		'profile_manager:account:username:info' => "Change votre nom d'utilisateur. Une icône vous indiquera sir le nouveau nom entré est valide ou pas.",
-		
-		// river events
-		'river:join:site:default' => '%s a rejoint la communauté',
-	
-		// login history
-		'profile_manager:account:login_history' => "Historique des logins",
-		'profile_manager:account:login_history:date' => "Date",
-		'profile_manager:account:login_history:ip' => "IP Addresse",
-		
-	
-	);
-	
-	add_translation("fr", $french);
-	
+If Profile Types are defined you can choose on which profile type this category applies. If no profile is specified, the category applies to all profile types (even undefined).',
+  'profile_manager:tooltips:category_list' => '<b>Catégories</b><br>
+Montre une liste de toutes les catégories configurées.<br><br>
+
+<i>Default</i> is the category that applies to all profiles.<br><br>
+
+Ajoutez les champs à ces catégories en les déposant dans les catégories.<br><br>
+
+Cliquez sur le libellé de la catégorie pour filtrer les champs visibles. Cliquez sur montrez tous les champs affichez tous les champs.<br><br>
+
+You can also change the order of the categories by dragging them (<i>Default can\'t be dragged</i>. <br><br>
+
+Click the edit icon to edit the category.',
+  'profile_manager:tooltips:profile_type' => '<b>Type de profil Type</b><br>
+Vous pouvez ajouter ici un type de nouveau profil.<br><br>
+Si vous laissez le libellé vide, vous pouvez internationaliser le libellé de type de profil  (<i>profil:types:[nom]</i>).<br><br>
+Entrez une description que les utilisateurs peuvent voir  lors de la sélection du type de profil ou laissez-le vide pour internationaliser (<i>profil:types:[nom]:description</i>).<br><br>
+
+Si les catégories sont définies, vous pouvez choisir quelles catégories s\'appliquent à ce type de profile.',
+  'profile_manager:tooltips:profile_type_list' => '<b>Types profil</b><br>
+Montre une liste de tous les types de profils configurés.<br><br>
+Cliquez l\'icone édité pour éditer le type de profil.',
+  'profile_manager:tooltips:actions' => '<b>Actions</b><br>
+Diverses actions relatées à ces champs de profil',
+  'widgets:profile_completeness:title' => 'Intégralité du profil',
+  'widgets:profile_completeness:description' => 'Montrez l\'intégralité du profil',
+  'widgets:profile_completeness:view:tips' => 'Conseil! Mettez à jour votre %s pour améliorer l\'intégralité du profil',
+  'widgets:profile_completeness:view:complete' => 'Félicitations! Votre profil est 100% complet!',
+  'widgets:register:title' => 'Enregistrer',
+  'widgets:register:description' => 'Montrez une boite d\'enregistrement',
+  'widgets:register:loggedout' => 'Vous devez être désactivé pour utiliser ce widget',
+  'profile_manager:datepicker:trigger' => 'Sélectionnez une date',
+  'profile_manager:datepicker:output:dateformat' => '%a %j %b %A',
+  'profile_manager:datepicker:input:dateformat' => '%m/%j/%A',
+  'profile_manager:datepicker:input:dateformat_js' => 'mm/jj/a',
+  'profile_manager:input:multi_select:empty_text' => 'Veuillez sélectionner....',
+  'profile_manager:profile:edit:custom_profile_type:label' => 'Sélectionnez votre type de profil',
+  'profile_manager:profile:edit:custom_profile_type:description' => 'Description du type de profil sélectionné',
+  'profile_manager:profile:edit:custom_profile_type:default' => 'Défaut',
+  'profile_manager:non_editable:info' => 'Ce champ ne peut pas être édité',
+  'profile_manager:register:mandatory' => 'Eléments marqués avec un *  sont obligatoires',
+  'profile_manager:register:hints:name' => 'Entrez le nom qui devrait être montré sur votre profil',
+  'profile_manager:register:hints:username' => 'Vous pouvez utiliser votre nom d\'utilisateur pour connecter',
+  'profile_manager:register:hints:email' => 'Cette adresse email sera utilisée pour envoyer vos mails. D\'autres utilisateurs ne peuvent pas voir cette adresse email.',
+  'profile_manager:register:hints:password' => 'Vous aurez besoin d\'un mot de passe pour vous connecter sur le site',
+  'profile_manager:register:hints:passwordagain' => 'Entrez le même mot de passe encore pour la validation',
+  'profile_manager:register:profile_icon' => 'Le site requiert que vous téléchargiez un icône Profil',
+  'profile_manager:registration:accept_terms' => 'J\'ai lu et j’accepte les %s conditions de service%s',
+  'profile_manager:simple_access_control' => 'Sélectionnez qui peut consulter vos informations de profil',
+  'profile_manager:register_pre_check:missing' => 'Le champ prochain doit être rempli: %s',
+  'profile_manager:register_pre_check:terms' => 'Vous avez besoin d\'accepter les modalités pour compléter l\'enregistrement',
+  'profile_manager:register_pre_check:profile_icon:error' => 'Erreur lors du téléchargement de votre icone de profil (probablement rattaché à la taille du fichier)',
+  'profile_manager:register_pre_check:profile_icon:nosupportedimage' => 'L\'icone de profil téléchargé n\'est pas le type exact ((jpg, gif, png)',
+  'profile_manager:admin:adduser:notify' => 'Notifiez l\'utlisateur',
+  'profile_manager:admin:adduser:use_default_access' => 'Métadonnées supplémentaires créés basées sur le niveau d\'accès par défaut du site',
+  'profile_manager:admin:adduser:extra_metadata' => 'Ajoutez des données de profil supplémentaires',
+  'profile_manager:account:username:button' => 'Cliquez pour modifier votre nom d\'utilisateur',
+  'profile_manager:account:username:info' => 'Modifiez votre nom d\'utilisateur. Un icone vous dira s le nom d\'utilisateur entré est valide et disponible.',
+  'river:join:site:default' => '%s a joint le site',
+  'profile_manager:account:login_history' => 'Histoire connexion',
+  'profile_manager:account:login_history:date' => 'Date',
+  'profile_manager:account:login_history:ip' => 'Adresse Ip',
+);
+add_translation("fr", $language);

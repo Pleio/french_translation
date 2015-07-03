@@ -1,28 +1,13 @@
 <?php
-/**
- * External pages French language file
- */
-
-$french = array(
-
-	/**
-	 * Menu items and titles
-	 */
-	'expages' => "Pages externes",
-	'admin:appearance:expages' => "pages HTML du site",
-	'expages:about' => "A propos",
-	'expages:terms' => "Mentions légales",
-	'expages:privacy' => "Charte d'utilisation",
-	'expages:vdo' => "Vidéos",
-	'back' => "Retour",
-
-	'expages:notset' => "Pas de contenu pour le moment.",
-
-	/**
-	 * Status messages
-	 */
-	'expages:posted' => "Votre message de page a bien été posté.",
-	'expages:error' => "Impossible de sauver cette page.",
+$language = array (
+  'expages' => 'Pages du site',
+  'admin:appearance:expages' => 'Pages du site',
+  'expages:about' => 'A propos de',
+  'expages:terms' => 'Conditions',
+  'expages:privacy' => 'Confidentialité',
+  'expages:contact' => 'Contact',
+  'expages:notset' => 'Cette page n\'a pas été configurée encore.',
+  'expages:posted' => 'Votre page a été mise à jour avec succès.',
+  'expages:error' => 'Incapable de sauvegarder cette page.',
 );
-
-add_translation("fr", $french);
+add_translation("fr", $language);

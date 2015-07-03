@@ -1,93 +1,64 @@
 <?php
-/**
-* Elgg send a message action page
-* 
-* @package ElggMessages
-*/
-
-$french = array(
-	/**
-	* Menu items and titles
-	*/
-
-	'messages' => "Messages",
-	'messages:back' => "Retour aux messages",
-	'messages:user' => "Boîte de réception de %s",
-	'messages:posttitle' => "Messages de %s : %s",
-	'messages:inbox' => "Boîte de réception",
-	'messages:send' => "Envoyer un message",
-	'messages:sent' => "Envoyé",
-	'messages:message' => "Message",
-	'messages:title' => "Sujet",
-	'messages:to' => "Pour",
-	'messages:from' => "De",
-	'messages:fly' => "Envoyer",
-	'messages:replying' => "Message en réponse à",
-	'messages:inbox' => "Boîte de réception",
-	'messages:sendmessage' => "Envoyer un message",
-	'messages:compose' => "Ecrire un message",
-	'messages:add' => "Composer un message",
-	'messages:sentmessages' => "Messages envoyés",
-	'messages:recent' => "Messages reçus",
-	'messages:original' => "Message d'origine",
-	'messages:yours' => "Votre message",
-	'messages:answer' => "Répondre",
-	'messages:toggle' => "Tout basculer",
-	'messages:markread' => "Marquer comme lu",
-	'messages:recipient' => "Choisissez un destinataire &hellip",
-	'messages:to_user' => "Pour : %s",
-
-	'messages:new' => "Nouveau message",
-
-	'notification:method:site' => "Messages",
-
-	'messages:error' => "Un problème est survenu lors de l'enregistrement de votre message. Veuillez réessayer.",
-
-	'item:object:messages' => "Messages",
-
-	/**
-	* Status messages
-	*/
-
-	'messages:posted' => "Votre message a bien été envoyé.",
-	'messages:success:delete:single' => "Le message a été supprimé",
-	'messages:success:delete' => "Les messages ont été supprimés",
-	'messages:success:read' => "Les messages ont été marqués comme lus",
-	'messages:error:messages_not_selected' => "Aucun message sélectionné",
-	'messages:error:delete:single' => "Impossible de supprimer le message",
-
-	/**
-	* Email messages
-	*/
-
-	'messages:email:subject' => "Vous avez reçu un nouveau message !",
-	'messages:email:body' => "Vous avez un nouveau message de %s. Il est écrit :
+$language = array (
+  'messages' => 'Messages',
+  'messages:unreadcount' => '%s non lu',
+  'messages:back' => 'Retour aux messages',
+  'messages:user' => '%s\'s boîte de réception',
+  'messages:posttitle' => '%s\'s messages: %s',
+  'messages:inbox' => 'boîte de réception',
+  'messages:send' => 'Envoyez',
+  'messages:sent' => 'Envoyé',
+  'messages:message' => 'Message',
+  'messages:title' => 'sujet',
+  'messages:to' => 'à',
+  'messages:from' => 'Provenant de',
+  'messages:fly' => 'Envoyez',
+  'messages:replying' => 'Message en réponse à',
+  'messages:sendmessage' => 'Envoyez un message',
+  'messages:compose' => 'Composez un message',
+  'messages:add' => 'Composez un message',
+  'messages:sentmessages' => 'Messages envoyés',
+  'messages:recent' => 'Messages récents',
+  'messages:original' => 'Message original',
+  'messages:yours' => 'Votre message',
+  'messages:answer' => 'Réponse',
+  'messages:toggle' => 'Basculer tout',
+  'messages:markread' => 'Marquage et lecture',
+  'messages:recipient' => 'Choisissez un recipient…',
+  'messages:to_user' => 'A : %s',
+  'messages:new' => 'Nouveau message',
+  'notification:method:site' => 'Site',
+  'messages:error' => 'Il y a eu un problème en sauvegardant votre message. Veuillez essayer encore.',
+  'item:object:messages' => 'Messages',
+  'messages:posted' => 'Votre message a été envoyé avec succès',
+  'messages:success:delete:single' => 'Le message a été supprimé',
+  'messages:success:delete' => 'Messages supprimés',
+  'messages:success:read' => 'Messages marqués comme lu',
+  'messages:error:messages_not_selected' => 'Pas de messages sélectionnés',
+  'messages:error:delete:single' => 'Impossible de supprimer le message',
+  'messages:email:subject' => 'Vous avez un nouveau message',
+  'messages:email:body' => 'Vous avez un nouveau message de  %s. Il se lit:
 
 
-	%s
+%s
 
 
-Pour voir vos messages, cliquez sur :
+Pour consulter vos messages, cliquez ici:
 
-	%s
+%s
 
-Pour envoyer un message, cliquez sur :
+To send %s a message, click here:
 
-	%s
+%s
 
-Vous ne pouvez pas répondre à cet email.",
-
-	/**
-	* Error messages
-	*/
-
-	'messages:blank' => "Désolé, vous devez écrire quelque chose dans votre message avant de pouvoir l'enregistrer.",
-	'messages:notfound' => "Désolé, le message spécifié n'a pu être trouvé.",
-	'messages:notdeleted' => "Désolé, ce message n'a pu être effacé.",
-	'messages:nopermission' => "Vous n'avez pas l'autorisation de modifier ce message.",
-	'messages:nomessages' => "Il n'y a aucun message.",
-	'messages:user:nonexist' => "Le destinataire n'a pu être trouvé dans la base de données des utilisateurs.",
-	'messages:user:blank' => "Vous n'avez sélectionné personne à qui envoyer ce message.",
+Vous ne pouvez pas répondre à ce mail.',
+  'messages:blank' => 'Désolé; vous avez besoin de mettre actuellement quelque chose dans le corps du message avant que nous puissions le sauvegarder.',
+  'messages:notfound' => 'Désolé; nous n\'avons pas pu trouver un message déterminé.',
+  'messages:notdeleted' => 'Désolé; nous ne pouvions pas supprimer ce message.',
+  'messages:nopermission' => 'Vous n\'avez pas d\'autorisation pour modifier ce message.',
+  'messages:nomessages' => 'Il n\'y a pas de messages.',
+  'messages:user:nonexist' => 'Nous ne pouvions pas trouver le destinataire dans la base de données de l\'utilisateur.',
+  'messages:user:blank' => 'Vous n\'avez pas sélectionné quelqu\'un à qui envoyer ceci.',
+  'messages:deleted_sender' => 'Utilisateur supprimé',
 );
-		
-add_translation("fr", $french);
+add_translation("fr", $language);

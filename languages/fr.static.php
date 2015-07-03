@@ -1,0 +1,46 @@
+<?php
+$language = array (
+  'item:object:static' => 'Page statistiques',
+  'static:settings:enable_out_of_date' => 'Autorise des notifications périmées/listage',
+  'static:settings:out_of_date_days' => 'Nombre de jours avant que le contenu soit périmé',
+  'static:settings:out_of_date_days:days' => 'jours',
+  'static:settings:enable_groups' => 'Autorise les pages statistiques dans les groupes',
+  'static:admin:empty' => 'Pas de pages statiques crées',
+  'static:all' => 'Gérez les pages stastiques',
+  'static:edit' => 'Créez/éditez une page stastique',
+  'static:new:permalink' => 'Permalien',
+  'static:new:parent' => 'Sélectionnez page parent',
+  'static:new:parent:top_level' => 'Pas de page parent/Haut niveau',
+  'static:new:comment' => 'Autorisez les observations',
+  'static:new:moderators' => 'Affectez des modérateurs',
+  'static:new:thumbnail' => 'Téléchargez onglet',
+  'static:new:remove_thumbnail' => 'Retirez onglet',
+  'static:groups:title' => 'Gérez les pages statistiques de groupe',
+  'static:groups:owner_block' => 'Les pages statistique de groupe',
+  'static:groups:tool_option' => 'Autorise les pages statistiques',
+  'static:group_tool_option:description' => 'Créez des pages statistiques pour le groupe. Celles-ci peuvent être uniquement gérées par un groupe d\'administrateurs/propriétaires',
+  'static:add' => 'Créez une page statique',
+  'static:add:subpage' => 'Créez une sous-page',
+  'static:revisions' => 'Révisions',
+  'static:menu:filter:out_of_date' => 'Tout le contenu périmé',
+  'static:menu:filter:out_of_date:mine' => 'Mon contenu périmé',
+  'static:menu:filter:out_of_date:group' => 'Contenu périmé de groupe',
+  'static:out_of_date:title' => 'Contenu périmé',
+  'static:out_of_date:owner:title' => 'Contenu périmé pour: %s',
+  'static:out_of_date:none' => 'Un contenu non périmé a été trouvé',
+  'static:out_of_date:notification:subject' => 'Votre contenu statique est périmé',
+  'static:out_of_date:notification:message' => 'Bonjour %s,
+
+Certains contenus des pages statiques sont périmés. Veuillez consultez si les informations sont toujours actuelles/utiles.
+
+Click here for a complete list:
+%s',
+  'static:widgets:static_groups:title' => 'Pages statiques',
+  'static:widgets:static_groups:description' => 'Montrez les pages statiques de groupe',
+  'static:widgets:static_groups:edit:main_page' => 'Sélectionnez la page principale pour listage',
+  'static:widgets:static_groups:edit:main_page:select' => 'Montre uniquement les pages principales',
+  'static:action:edit:error:title_description' => 'Veuillez entrer un titre et une description',
+  'static:action:edit:error:friendly_title' => 'Le permalien est déjà pris, veuillez en choisir un autre',
+  'static:action:edit:success' => 'Sauvegardez avec succès',
+);
+add_translation("fr", $language);

@@ -1,12 +1,7 @@
 <?php
-/**
- * Tag cloud french language file
- */
-
-$french = array(
-	'tagcloud:widget:title' => "Nuage de mots-clés",
-	'tagcloud:widget:description' => "Nuage de mots-clés",
-	'tagcloud:widget:numtags' => "Nombre de mots-clés à afficher",
+$language = array (
+  'tagcloud:widget:title' => 'Mot clé',
+  'tagcloud:widget:description' => 'Mot clé',
+  'tagcloud:widget:numtags' => 'Nombre de balises à montrer',
 );
-
-add_translation("fr", $french);
+add_translation("fr", $language);

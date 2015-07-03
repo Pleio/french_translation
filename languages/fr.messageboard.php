@@ -1,75 +1,41 @@
 <?php
-
-$french = array(
-
-	/**
-	 * Menu items and titles
-	 */
-
-	'messageboard:board' => "Forum",
-	'messageboard:messageboard' => "forum",
-	'messageboard:viewall' => "Voir tout",
-	'messageboard:postit' => "Envoyer",
-	'messageboard:history:title' => "Historique",
-	'messageboard:none' => "Il n'y a encore rien dans le forum",
-	'messageboard:num_display' => "Nombre de messages à afficher",
-	'messageboard:desc' => "Ceci est un forum que vous pouvez ajouter sur votre profil, et où les autres utilisateurs peuvent laisse un message.",
-
-	'messageboard:user' => "Forum de %s",
-
-	'messageboard:replyon' => "réponse sur",
-	'messageboard:history' => "historique",
-
-	'messageboard:owner' => "Forum de %s",
-	'messageboard:owner_history' => "%s a envoyé un message sur le forum de %s",
-
-	/**
-	 * Message board widget river
-	 */
-	'messageboard:river:added' => "a écrit sur",
-	'messageboard:river:user' => "de %s",
-	'messageboard:river:messageboard' => "forum",
-
-
-	/**
-	 * Status messages
-	 */
-
-	'messageboard:posted' => "Votre message a bien été envoyé sur le forum.",
-	'messageboard:deleted' => "Votre message a bien été supprimé.",
-
-	/**
-	 * Email messages
-	 */
-
-	'messageboard:email:subject' => "Vous avez un nouveau message sur le forum !",
-	'messageboard:email:body' => "Vous avez reçu un nouveau message de %s sur votre forum. Il est écrit :
+$language = array (
+  'messageboard:board' => 'Forum de discussion',
+  'messageboard:messageboard' => 'Forum de discussion',
+  'messageboard:viewall' => 'Affichez tout',
+  'messageboard:postit' => 'Courrier',
+  'messageboard:history:title' => 'Histoire',
+  'messageboard:none' => 'Il n\'y a rien sur ce forum de discussion pour l\'instant',
+  'messageboard:num_display' => 'Nombre de messages à afficher',
+  'messageboard:desc' => 'Ceci est un forum de discussion que vous pouvez placer sur votre profil ou les autres utilisateurs peuvent déposer des commentaires',
+  'messageboard:user' => '%s\'s forum de discussion',
+  'messageboard:replyon' => 'Réponse sur',
+  'messageboard:history' => 'histoire',
+  'messageboard:owner' => '%s\'s  forum de discussion',
+  'messageboard:owner_history' => '%s\'s courriers sur %s\'s le forum de discussion',
+  'river:messageboard:user:default' => '%s posté sur %s\'s le forum de discussion',
+  'messageboard:posted' => 'Vous avez posté avec succès sur le forum de discussion',
+  'messageboard:deleted' => 'Vous avez retiré avec succès le message',
+  'messageboard:email:subject' => 'Vous avez un nouveau commentaire de forum de discussion!',
+  'messageboard:email:body' => 'Vous avez un nouveau commentaire de forum de discussion de %s. Ce message dit:
 
 
 %s
 
 
-Pour voir vos messages de forum, cliquez sur :
+Pour consulter vos commentaires du forum de discussion, cliquez ici:
 
-	%s
+%s
 
-Pour voir le profil de %s, cliquez sur :
+To view %s\'s profile, click here:
 
-	%s
+%s
 
-Vous ne pouvez pas répondre à cet email.",
-
-	/**
-	 * Error messages
-	 */
-
-	'messageboard:blank' => "Désolé, vous devez écrire quelque chose dans le corps du message avant de pouvoir l'enregistrer.",
-	'messageboard:notfound' => "Désolé, l'élément spécifié n'a pu être trouvé.",
-	'messageboard:notdeleted' => "Désolé, le message n'a pu être supprimé.",
-	'messageboard:somethingwentwrong' => "Quelque chose a tourné court lors de l'enregistrement de votre message, veuillez vérifier que vous avez bien écrit un message.",
-
-	'messageboard:failure' => "Une erreur imprévue s'est produite lors de l'ajout de votre message. Veuillez réeessayer.",
-
+Vous ne pouvez pas répondre à ce mail.',
+  'messageboard:blank' => 'Désolé. Vous avez besoin de mettre quelque chose dans la zone du message avant que nous puissions le sauvegarder.',
+  'messageboard:notfound' => 'Désolé; nous n\'avons pas pu trouver l\'élément spécifique.',
+  'messageboard:notdeleted' => 'Désolé; nous ne pouvions pas effacer ce message.',
+  'messageboard:somethingwentwrong' => 'Quelque chose s\'est mal passé lorsque nous avons essayé de sauvegarder votre message. Assurez vous d\'avoir écrit actuellement un message.',
+  'messageboard:failure' => 'Une erreur inconnue est apparue lors de l\'ajout de votre message. Veuillez essayer à nouveau.',
 );
-
-add_translation("fr", $french);
+add_translation("fr", $language);
