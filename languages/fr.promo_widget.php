@@ -1,0 +1,25 @@
+<?php
+$language = array (
+  'promo_widget:widget:title' => 'Promotion',
+  'promo_widget:widget:description' => 'Ajoutez une bannière et/ou du texte à votre page',
+  'promo_widget:widget:edit:right:title' => 'Côté droit du widget.',
+  'promo_widget:widget:edit:left:title' => 'Côté gauche du widget.',
+  'promo_widget:widget:edit:type' => 'Type de côté',
+  'promo_widget:widget:edit:type:text' => 'Texte',
+  'promo_widget:widget:edit:type:image' => 'Image par URL',
+  'promo_widget:widget:edit:type:image_upload' => 'Téléchargement image',
+  'promo_widget:widget:edit:text' => 'Texte',
+  'promo_widget:widget:edit:image' => 'Image url',
+  'promo_widget:widget:edit:image_upload' => 'Veuillez sélectionner une image pour télécharger',
+  'promo_widget:widget:edit:background' => 'Couleur arrière plan',
+  'promo_widget:widget:edit:link' => 'Lien',
+  'promo_widget:widget:edit:wrapper_text' => 'Texte survolé',
+  'promo_widget:background:select' => 'Sélectionnez une couleur en arrière-plan',
+  'promo_widget:background:light_blue' => 'Bleu clair',
+  'promo_widget:background:blue' => 'Bleu',
+  'promo_widget:background:light_grey' => 'Gris clair',
+  'promo_widget:background:grey' => 'Gris',
+  'promo_widget:background:dark_grey' => 'Gris foncé',
+  'promo_widget:widget:empty' => 'Vous avez besoin de configurer ce widget',
+);
+add_translation("fr", $language);

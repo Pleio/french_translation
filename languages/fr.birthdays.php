@@ -1,0 +1,25 @@
+<?php
+$language = array (
+  'birthdays:no_field_configured' => 'Aucun champ relatif à un anniversaire n\'est déjà configuré. Veuillez demander svp à  votre administrateur de configurer le plugin.',
+  'birthdays:more' => 'Davantage d\'anniversaires',
+  'birthdays:none' => 'Pas d\'anniversaires trouvés',
+  'birthdays:menu:site:title' => 'Anniversaires',
+  'birthdays:filter:upcoming' => 'Anniversaires à venir',
+  'birthdays:menu:owner_block:group:title' => 'Groupe d\'anniversaires',
+  'birthdays:breadcrumb:all' => 'Anniversaires',
+  'brithdays:profile_field:type' => 'Anniversaire',
+  'birthdays:settings:field_selection:description' => 'Veuillez sélectionner le champ du profil qui contient l\'anniversaire de vos utilisateurs.',
+  'birthdays:settings:field_selection:none' => 'Désactiver l\'affichage des anniversaires',
+  'birthdays:settings:output_format:description' => 'Ici vous pouvez contrôler le format de sortie des champs d’anniversaire',
+  'birthdays:page:day:title' => 'Anniversaires sur: %s',
+  'birthdays:page:friends:title' => '%s\'s anniversaires des amis',
+  'birthdays:page:upcoming:title' => 'Anniversaires à venir',
+  'birthdays:page:group:title' => 'Anniversaires des % membres',
+  'birthdays:sidebar:datepicker:title' => 'Montrez les anniversaires sur',
+  'birthdays:widget:title' => 'Anniversaires',
+  'birthdays:widget:description' => 'Montrez les anniversaires de tous, vos amis ou membres du groupe',
+  'birthdays:widget:settings:who_to_show' => 'Qui devrait apparaître dans le gadget?',
+  'birthdays:groups:options' => 'Montrez les anniversaires des membres du groupe',
+  'birthdays:groups:not_enabled' => 'Le listage de l\'anniversaire n\'est pas autorisé pour ce groupe',
+);
+add_translation("fr", $language);
